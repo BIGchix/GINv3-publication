@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 
-Multi-omics **Gene Interaction Network (GIN)** context extraction and **SigPN**
+Multi-omics **Global Integrative Network (GIN)** context extraction and **SigPN**
 (**signaling** Petri net — not stochastic PN) simulation for mechanism-oriented
 analyses. This repository is the manuscript **Code Availability** package:
 an installable toolkit (`gin-multomics`) plus a recipe that **recomputes** the

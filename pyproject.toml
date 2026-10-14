@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "gin-multomics"
 version = "0.2.0"
-description = "GIN multi-omics toolkit: context extraction and SigPN (signaling Petri net; not stochastic PN), with GINv3.11a p53 recipes"
+description = "Global Integrative Network (GIN) multi-omics toolkit: context extraction and SigPN (signaling Petri net; not stochastic PN), with GINv3.11a p53 recipes"
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
