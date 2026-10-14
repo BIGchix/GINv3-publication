@@ -1,0 +1,13 @@
+{
+  "null_strength": "rewire",
+  "emp_p_cutoff": 0.05,
+  "n_active": 61,
+  "n_rwr_null": 1000,
+  "n_replicates_ok": 1000,
+  "source_summary": "gin_out/p53_active_tf_C_rerun_20260809/active_tf_rwr_C_rewire_summary.json",
+  "pipeline_default": false,
+  "note": "B/cohesion = pipeline default; C/rewire = optional stricter/slower",
+  "pipeline_entry": "scripts/select_active_tfs.py",
+  "method_arg": "c",
+  "active_tfs_file": "gin_out/p53_active_tf_C_rerun_20260809/active_tfs_emp05.txt"
+}

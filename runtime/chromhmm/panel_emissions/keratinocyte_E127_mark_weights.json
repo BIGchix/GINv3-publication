@@ -1,0 +1,23 @@
+{
+  "formula": "w_j = mean_A e_ij - mean_I e_ij",
+  "source_path": "runtime/chromhmm/panel_emissions/keratinocyte_E127_promoter_emission.tsv",
+  "n_marks": 6,
+  "weights": {
+    "H3K27AC": 0.861812176362146,
+    "H3K27ME3": -0.8634342983277006,
+    "H3K36ME3": 0.00025114094029997716,
+    "H3K4ME1": -0.45329565312235637,
+    "H3K4ME3": 0.22526637554132245,
+    "H3K9ME3": -0.028892608925266208
+  },
+  "n_promoter_states": 2,
+  "n_active_states": 1,
+  "n_inactive_states": 1,
+  "active_state_ids": [
+    "6->TssA"
+  ],
+  "inactive_state_ids": [
+    "7->BivFlnk"
+  ],
+  "skipped_non_promoter": 0
+}

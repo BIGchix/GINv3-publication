@@ -1,0 +1,147 @@
+{
+  "cell": "h1_wa01",
+  "dbs": [
+    "chip_atlas"
+  ],
+  "promoters_bed": "/disk1/usrData/chixData/multiOmicsIntegration/runtime/chip_gin_align/ref/promoters_tss_m1000_p100.bed",
+  "n_allowlist_pairs": 645454,
+  "n_tf_gate": 99,
+  "per_db": {
+    "chip_atlas": {
+      "n_pairs": 430305,
+      "n_tf": 90,
+      "build": {
+        "ok": true,
+        "n_peaks": 2931352,
+        "n_tf": 96,
+        "n_allag_ok": 1,
+        "n_allag_fail": 0,
+        "allag_keys": [
+          "Oth.PSC.05.AllAg.hESC_H1"
+        ],
+        "n_experiments": 238,
+        "used_files": [
+          "/disk1/usrData/chixData/multiOmicsIntegration/runtime/chip_gin_align/_cache/chip_atlas/Oth.PSC.05.AllAg.hESC_H1.bed"
+        ],
+        "out_bed": "/disk1/usrData/chixData/multiOmicsIntegration/runtime/chip_gin_align/h1_wa01/peaks/chip_atlas_peaks.bed"
+      },
+      "intersect": {
+        "n_raw_overlap_pairs": 450428,
+        "filter": {
+          "n_raw_pairs": 450428,
+          "n_kept_pairs": 430305,
+          "n_unmapped_tf_labels": 6,
+          "n_unmapped_gene_labels": 0,
+          "top_unmapped_tf": [
+            [
+              "QSER1",
+              35649
+            ],
+            [
+              "Epitope tags",
+              2518
+            ],
+            [
+              "TAF2",
+              1765
+            ],
+            [
+              "TSC1",
+              174
+            ],
+            [
+              "FOXB1",
+              114
+            ],
+            [
+              "TCF3",
+              23
+            ]
+          ],
+          "top_unmapped_gene": []
+        },
+        "n_tf": 90,
+        "n_gene": 22363
+      }
+    },
+    "gtrd": {
+      "n_pairs": 327040,
+      "n_tf": 75,
+      "loaded_from_disk": true
+    },
+    "remap": {
+      "n_pairs": 435681,
+      "n_tf": 65,
+      "loaded_from_disk": true
+    }
+  },
+  "out_dir": "/disk1/usrData/chixData/multiOmicsIntegration/runtime/chip_gin_align/h1_wa01",
+  "n_tf_union": 99,
+  "n_tf_cap_p53": 11,
+  "tfs_cap_p53": [
+    "ATF2",
+    "BRCA1",
+    "CTNNB1",
+    "EP300",
+    "MAX",
+    "MYC",
+    "NRF1",
+    "SMAD1",
+    "SMAD3",
+    "TRIM28",
+    "YAP1"
+  ],
+  "per_db_n_pairs": {
+    "gtrd": 327040,
+    "remap": 435681,
+    "chip_atlas": 430305
+  },
+  "per_db_n_tf": {
+    "gtrd": 75,
+    "remap": 65,
+    "chip_atlas": 90
+  },
+  "per_db_n_tf_cap_p53": {
+    "gtrd": 10,
+    "remap": 8,
+    "chip_atlas": 11
+  },
+  "per_db_tfs_cap_p53": {
+    "gtrd": [
+      "ATF2",
+      "BRCA1",
+      "CTNNB1",
+      "EP300",
+      "MAX",
+      "MYC",
+      "NRF1",
+      "SMAD3",
+      "TRIM28",
+      "YAP1"
+    ],
+    "remap": [
+      "ATF2",
+      "BRCA1",
+      "EP300",
+      "MAX",
+      "MYC",
+      "NRF1",
+      "TRIM28",
+      "YAP1"
+    ],
+    "chip_atlas": [
+      "ATF2",
+      "BRCA1",
+      "CTNNB1",
+      "EP300",
+      "MAX",
+      "MYC",
+      "NRF1",
+      "SMAD1",
+      "SMAD3",
+      "TRIM28",
+      "YAP1"
+    ]
+  },
+  "p53_subgraph_tf_n": 54
+}

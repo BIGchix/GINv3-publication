@@ -1,0 +1,144 @@
+{
+  "n_hist_to_promoter_state": 512,
+  "n_inhibitory": 245,
+  "n_activating": 267,
+  "n_zero_or_other": 0,
+  "by_mark_class": {
+    "acetyl_active_like": {
+      "activating": 85
+    },
+    "active_like": {
+      "activating": 182
+    },
+    "repressive_like": {
+      "inhibitory": 245
+    }
+  },
+  "n_paths_to_promoter_active": 512,
+  "n_inhibitory_paths_to_active": 245,
+  "sample_inhibitory": [
+    {
+      "source": "ADGRB1.promoter.H3K27me2",
+      "target": "ADGRB1.promoter;state",
+      "weight": -0.010000000000000002
+    },
+    {
+      "source": "ADGRB1.promoter.H3K27me3",
+      "target": "ADGRB1.promoter;state",
+      "weight": -0.010000000000000002
+    },
+    {
+      "source": "ADGRB1.promoter.H3K9me2",
+      "target": "ADGRB1.promoter;state",
+      "weight": -0.010000000000000002
+    },
+    {
+      "source": "ADGRB1.promoter.H3K9me3",
+      "target": "ADGRB1.promoter;state",
+      "weight": -0.010000000000000002
+    },
+    {
+      "source": "AIFM2.promoter.H3K27me2",
+      "target": "AIFM2.promoter;state",
+      "weight": -0.010000000000000002
+    },
+    {
+      "source": "AIFM2.promoter.H3K27me3",
+      "target": "AIFM2.promoter;state",
+      "weight": -0.010000000000000002
+    },
+    {
+      "source": "AIFM2.promoter.H3K9me2",
+      "target": "AIFM2.promoter;state",
+      "weight": -0.010000000000000002
+    },
+    {
+      "source": "AIFM2.promoter.H3K9me3",
+      "target": "AIFM2.promoter;state",
+      "weight": -0.010000000000000002
+    },
+    {
+      "source": "APAF1.promoter.H3K27me2",
+      "target": "APAF1.promoter;state",
+      "weight": -0.010000000000000002
+    },
+    {
+      "source": "APAF1.promoter.H3K9me2",
+      "target": "APAF1.promoter;state",
+      "weight": -0.010000000000000002
+    },
+    {
+      "source": "APAF1.promoter.H3K9me3",
+      "target": "APAF1.promoter;state",
+      "weight": -0.010000000000000002
+    },
+    {
+      "source": "ATM.promoter.H3K27me2",
+      "target": "ATM.promoter;state",
+      "weight": -0.010000000000000002
+    }
+  ],
+  "sample_activating": [
+    {
+      "source": "ADGRB1.promoter.H3K27ac",
+      "target": "ADGRB1.promoter;state",
+      "weight": 0.010000000000000002
+    },
+    {
+      "source": "ADGRB1.promoter.H3K4me1",
+      "target": "ADGRB1.promoter;state",
+      "weight": 0.010000000000000002
+    },
+    {
+      "source": "ADGRB1.promoter.H3K4me2",
+      "target": "ADGRB1.promoter;state",
+      "weight": 0.010000000000000002
+    },
+    {
+      "source": "ADGRB1.promoter.H3K4me3",
+      "target": "ADGRB1.promoter;state",
+      "weight": 0.010000000000000002
+    },
+    {
+      "source": "AIFM2.promoter.H3K27ac",
+      "target": "AIFM2.promoter;state",
+      "weight": 0.010000000000000002
+    },
+    {
+      "source": "AIFM2.promoter.H3K4me1",
+      "target": "AIFM2.promoter;state",
+      "weight": 0.010000000000000002
+    },
+    {
+      "source": "AIFM2.promoter.H3K4me2",
+      "target": "AIFM2.promoter;state",
+      "weight": 0.010000000000000002
+    },
+    {
+      "source": "AIFM2.promoter.H3K4me3",
+      "target": "AIFM2.promoter;state",
+      "weight": 0.010000000000000002
+    },
+    {
+      "source": "APAF1.promoter.H3K27ac",
+      "target": "APAF1.promoter;state",
+      "weight": 0.010000000000000002
+    },
+    {
+      "source": "APAF1.promoter.H3K4me1",
+      "target": "APAF1.promoter;state",
+      "weight": 0.010000000000000002
+    },
+    {
+      "source": "APAF1.promoter.H3K4me2",
+      "target": "APAF1.promoter;state",
+      "weight": 0.010000000000000002
+    },
+    {
+      "source": "APAF1.promoter.H3K4me3",
+      "target": "APAF1.promoter;state",
+      "weight": 0.010000000000000002
+    }
+  ],
+  "note": "GIN stores histone → GENE.promoter;state (signed), then promoter;state → promoter.active (+1). SPN maps w_in*w_out<0 to inhibition."
+}

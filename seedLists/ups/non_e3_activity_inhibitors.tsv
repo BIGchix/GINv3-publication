@@ -1,0 +1,8 @@
+gene	class	scale	note
+SMYD1	KMT_nonhistone	0.1	SET/MYND methyltransferase; non-histone activity repression (not UPS E3)
+SMYD2	KMT_nonhistone	0.1	p53 K370 methylation represses activity (Huang 2006); not primary UPS E3
+SMYD3	KMT_nonhistone	0.1	SMYD-family non-histone KMT; activity/oncogenic PTM not UPS E3
+KMT5A	KMT_nonhistone	0.1	alias SETD8; p53 K382 methylation can repress activity
+SETD8	KMT_nonhistone	0.1	same as KMT5A
+PRMT5	PRMT	0.1	arginine methyltransferase; substrate activity regulation, not UPS E3
+PRMT1	PRMT	0.1	arginine methyltransferase; activity/PTM regulation, not UPS E3

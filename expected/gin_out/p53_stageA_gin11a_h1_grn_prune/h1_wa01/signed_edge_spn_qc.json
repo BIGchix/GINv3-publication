@@ -1,0 +1,107 @@
+{
+  "n_neg_gin_edges": 338,
+  "n_neg_arcs_in_petri": 338,
+  "n_neg_dropped": 0,
+  "n_spn_inhibition": 1594,
+  "n_spn_activation": 8962,
+  "n_expected_rvr_inhibition": 339,
+  "n_got_rvr_inhibition": 339,
+  "n_both_negative_rvr": 32,
+  "inhibition_by_source_kind": {
+    "promoter": 81,
+    "histone": 757,
+    "protein": 366,
+    "rna": 337,
+    "other": 13,
+    "metabolite": 40
+  },
+  "sample_both_neg": [
+    {
+      "source": "ATM.protein",
+      "via": "ATM.protein;COP1.protein",
+      "target": "COP1.protein",
+      "w_in": -1.0,
+      "w_out": -1.0
+    },
+    {
+      "source": "ATR.protein",
+      "via": "ATR.protein;MDM2.protein",
+      "target": "MDM2.protein",
+      "w_in": -1.0,
+      "w_out": -1.0
+    },
+    {
+      "source": "ATR.protein",
+      "via": "ATR.protein;PLK1.protein",
+      "target": "PLK1.protein",
+      "w_in": -1.0,
+      "w_out": -1.0
+    },
+    {
+      "source": "ATR.protein",
+      "via": "ATR.protein;SIAH1.protein",
+      "target": "SIAH1.protein",
+      "w_in": -1.0,
+      "w_out": -1.0
+    },
+    {
+      "source": "CDK2.protein",
+      "via": "CDK2.protein;CDKN1A.protein",
+      "target": "CDKN1A.protein",
+      "w_in": -1.0,
+      "w_out": -1.0
+    },
+    {
+      "source": "CDK6.protein",
+      "via": "CDK6.protein;CDKN1A.protein",
+      "target": "CDKN1A.protein",
+      "w_in": -1.0,
+      "w_out": -1.0
+    },
+    {
+      "source": "CDKN1A.protein",
+      "via": "CDKN1A.protein;CCNB1.protein",
+      "target": "CCNB1.protein",
+      "w_in": -1.0,
+      "w_out": -1.0
+    },
+    {
+      "source": "CDKN1A.protein",
+      "via": "CDKN1A.protein;CCND3.protein",
+      "target": "CCND3.protein",
+      "w_in": -1.0,
+      "w_out": -1.0
+    },
+    {
+      "source": "CDKN1A.protein",
+      "via": "CDKN1A.protein;CCNE2.protein;CDK2.protein",
+      "target": "CCNE2.protein",
+      "w_in": -1.0,
+      "w_out": -1.0
+    },
+    {
+      "source": "CDKN1A.protein",
+      "via": "CDKN1A.protein;CCNE2.protein;CDK2.protein",
+      "target": "CDK2.protein",
+      "w_in": -1.0,
+      "w_out": -1.0
+    },
+    {
+      "source": "CDKN1A.protein",
+      "via": "CDKN1A.protein;CDK1.protein",
+      "target": "CDK1.protein",
+      "w_in": -1.0,
+      "w_out": -1.0
+    },
+    {
+      "source": "CDKN1A.protein",
+      "via": "CDKN1A.protein;CDK1.protein;CCNB1.protein",
+      "target": "CCNB1.protein",
+      "w_in": -1.0,
+      "w_out": -1.0
+    }
+  ],
+  "sample_missed": [],
+  "ok": true,
+  "note": "SPN inhibition if w_in<0 or w_out<0 on R→V→R (covers histone XOR signs and protein both-negative inhibition encoding)."
+}

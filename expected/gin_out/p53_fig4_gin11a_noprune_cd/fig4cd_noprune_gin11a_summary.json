@@ -1,0 +1,83 @@
+{
+  "pipeline": "fig4cd_noprune_gin11a_stageA",
+  "version_id": "p53_pub_fig4cd_noprune_gin11a_20261001",
+  "status": "FROZEN_PUBLICATION",
+  "lock": "docs/locks/p53_pub_fig4cd_noprune_gin11a_20261001.json",
+  "spn_pipeline_version": "spn_v5_degrade_anc_source",
+  "stage_a": "gin_out/p53_shared_context_v4_rh1_gin11a",
+  "work_dir": "gin_out/p53_fig4_gin11a_noprune_cd",
+  "blocks": 200,
+  "runs": 200,
+  "plateau_blocks": 100,
+  "grn_prune": false,
+  "place_levels": "runtime/omics_seed/cellline_levels/{cell}/{cell}_rna_plus_met_sources_place_levels.tsv",
+  "panels": {
+    "C": {
+      "title": "Simulated histones",
+      "leaf_order": [
+        "CD4",
+        "NHEK",
+        "H9",
+        "HUVEC",
+        "H1",
+        "IMR90"
+      ],
+      "offdiag_range": [
+        0.9041482654126489,
+        0.9904469940974803
+      ],
+      "metric": "pearson",
+      "linkage": "average on 1-r",
+      "vmin": 0.9,
+      "vmax": 1.0,
+      "cmap": "wine",
+      "cbar_label": "Pearson r",
+      "cbar_ticks": [
+        0.9,
+        0.92,
+        0.94,
+        0.96,
+        0.98,
+        1.0
+      ],
+      "linewidths": 1.0,
+      "scale": "data-driven nice floor of offdiag min",
+      "layout": "dendrogram in heatmap x-units via make_axes_locatable (column-aligned)",
+      "png": "manuscript/figures/fig4/fig4_C_gin11a_noprune_histone.png",
+      "pdf": "manuscript/figures/fig4/fig4_C_gin11a_noprune_histone.pdf"
+    },
+    "D": {
+      "title": "Simulated promoters",
+      "leaf_order": [
+        "CD4",
+        "HUVEC",
+        "H1",
+        "H9",
+        "IMR90",
+        "NHEK"
+      ],
+      "offdiag_range": [
+        0.964115376991643,
+        0.9947292188753006
+      ],
+      "metric": "pearson",
+      "linkage": "average on 1-r",
+      "vmin": 0.96,
+      "vmax": 1.0,
+      "cmap": "vivid_red",
+      "cbar_label": "Pearson r",
+      "cbar_ticks": [
+        0.96,
+        0.97,
+        0.98,
+        0.99,
+        1.0
+      ],
+      "linewidths": 1.0,
+      "scale": "data-driven nice floor of offdiag min",
+      "layout": "dendrogram in heatmap x-units via make_axes_locatable (column-aligned)",
+      "png": "manuscript/figures/fig4/fig4_D_gin11a_noprune_promoter.png",
+      "pdf": "manuscript/figures/fig4/fig4_D_gin11a_noprune_promoter.pdf"
+    }
+  }
+}

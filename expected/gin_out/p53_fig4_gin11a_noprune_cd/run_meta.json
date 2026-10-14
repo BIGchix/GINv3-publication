@@ -1,0 +1,6 @@
+{
+  "pipeline": "fig4cd_noprune_gin11a_stageA",
+  "spn_pipeline_version": "spn_v5_degrade_anc_source",
+  "stage_a": "gin_out/p53_shared_context_v4_rh1_gin11a",
+  "note": "Shared context; no GRN prune; matches fig4-2 C/D method with new Stage A input"
+}

@@ -1,0 +1,73 @@
+{
+  "_comment": "Extra UC_ID aliases for KEGG compounds, curated from GINv2.0 paper Table 1 (top-degree hubs) and charge-state SIDs used in that network. Prefer CID then SID per UC_ID priority when aligning.",
+  "_source": "npj Syst Biol Appl 2024;10:4 Table 1 Top 20 nodes with highest degrees",
+  "aliases": {
+    "C00001": {
+      "name": "H2O / water",
+      "CID": ["CID962"],
+      "note": "Table1 Water"
+    },
+    "C00002": {
+      "name": "ATP",
+      "CID": ["CID5957"],
+      "SID": ["SID8148096"],
+      "note": "Table1 Adenosine-5'-Triphosphate + ATP(4-); not KEGG SID3304"
+    },
+    "C00003": {
+      "name": "NAD+",
+      "SID": ["SID99319226"],
+      "note": "Table1 NAD(1-)"
+    },
+    "C00004": {
+      "name": "NADH",
+      "CID": ["CID21604869"],
+      "note": "Table1 beta-NADH"
+    },
+    "C00005": {
+      "name": "NADPH",
+      "CID": ["CID5884"],
+      "note": "Table1 NADPH"
+    },
+    "C00007": {
+      "name": "O2 / oxygen",
+      "CID": ["CID977"],
+      "note": "Table1 Oxygen"
+    },
+    "C00008": {
+      "name": "ADP",
+      "CID": ["CID6022"],
+      "SID": ["SID85646635"],
+      "note": "Table1 Adenosine-5'-Diphosphate + ADP(3-); not KEGG SID3310"
+    },
+    "C00009": {
+      "name": "phosphate / Pi",
+      "CID": ["CID1004", "CID1061"],
+      "note": "Table1 Phosphoric Acid / Phosphate Ion"
+    },
+    "C00010": {
+      "name": "CoA",
+      "CID": ["CID87642"],
+      "note": "Table1 Coenzyme A"
+    },
+    "C00011": {
+      "name": "CO2",
+      "CID": ["CID280"],
+      "note": "Table1 Carbon Dioxide"
+    },
+    "C00013": {
+      "name": "diphosphate / PPi",
+      "CID": ["CID4995"],
+      "note": "Table1 Diphosphate(2-)"
+    },
+    "C00080": {
+      "name": "H+",
+      "CID": ["CID1038"],
+      "note": "Table1 H+"
+    },
+    "C01330": {
+      "name": "Na+",
+      "CID": ["CID923"],
+      "note": "Table1 Sodium Ion"
+    }
+  }
+}

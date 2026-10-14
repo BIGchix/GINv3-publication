@@ -1,0 +1,110 @@
+{
+  "version_id": "p53_pub_gin11a_hs0_20260929",
+  "canonical_name": "p53 publication pipeline · GINv3.11a (hash-seed frozen)",
+  "supersedes": "p53_pub_gin11a_20260929",
+  "locked_at": "2026-09-29T07:21:47Z",
+  "slurm_job": "1190",
+  "started": "2026-09-29T15:04:05+08:00",
+  "status": "FROZEN_PUBLICATION",
+  "determinism": {
+    "PYTHONHASHSEED": "0",
+    "context_n_jobs": 20,
+    "debias": false,
+    "note": "Same n_jobs as freeze build; do not mix n_jobs=1 vs >1 without re-lock."
+  },
+  "do_not_overwrite": [
+    "GINv3.11a.sifi",
+    "gin_out/p53_shared_context_v4_rh1_gin11a/",
+    "gin_out/p53_stageA_gin11a_h1_grn_prune/h1_wa01/",
+    "gin_out/p53_fig3e_v4_gin11a_realhop1_gh2/",
+    "gin_out/p53_fig3e_v4_gin11a_realhop2_gh4/",
+    "gin_out/p53_fig3e_v4_gin11a_realhop3_gh6/"
+  ],
+  "gin": {
+    "sifi": "GINv3.11a.sifi",
+    "sha256": "192b2cb5a8147324fc41064a3f20c943a3d82c03972cff544e3d26219e7ace83",
+    "bytes": 824892563
+  },
+  "stage_a": {
+    "path": "gin_out/p53_shared_context_v4_rh1_gin11a",
+    "edges_tsv": "gin_out/p53_shared_context_v4_rh1_gin11a/subgraph_edges.tsv",
+    "n_edges": 11368,
+    "n_nodes": 4626,
+    "n_neg": 334,
+    "sha256_edges": "350b7cb9acc8eaa7b1454f3c912f5aa1d94742a5f05b7492ed01b447039e6a43",
+    "context_pipeline_version": "context_v4_hme_soft_metenz3a_dogma_hme_seedhist_dropnsact_histprune",
+    "context_mech_depth": 2,
+    "real_hop": 1
+  },
+  "fig3e": {
+    "stats": "benchmarks/subgraph-speed/fig3e_v4_gin11a_context_hop_stats.json",
+    "plot_stem": "manuscript/figures/fig3/fig3_E_v4_gin11a_hops",
+    "rows": [
+      {
+        "real_hop": 1,
+        "graph_hop": 2,
+        "n_total_nodes": 4626,
+        "n_real_nodes": 1497,
+        "n_edges": 11368
+      },
+      {
+        "real_hop": 2,
+        "graph_hop": 4,
+        "n_total_nodes": 17015,
+        "n_real_nodes": 5097,
+        "n_edges": 50324
+      },
+      {
+        "real_hop": 3,
+        "graph_hop": 6,
+        "n_total_nodes": 24415,
+        "n_real_nodes": 7461,
+        "n_edges": 83243
+      }
+    ],
+    "rh1_equals_stage_a": true
+  },
+  "stage_b_h1": {
+    "path": "gin_out/p53_stageA_gin11a_h1_grn_prune/h1_wa01",
+    "edges_tsv": "gin_out/p53_stageA_gin11a_h1_grn_prune/h1_wa01/subgraph_edges.tsv",
+    "n_edges": 11363,
+    "n_nodes": 4626,
+    "n_neg": 334,
+    "sha256_edges": "562d79bc65749d06ea1291a33f12c6f774d6135e027d6e717438a3e406b0f15a",
+    "n_edges_in": 11368,
+    "n_edges_out": 11363,
+    "spn": {
+      "n_places": 1497,
+      "n_transitions": 4384,
+      "n_arcs": 12192
+    }
+  },
+  "stage_c_pulse": {
+    "spn_pipeline_version": "spn_std_h1_b0",
+    "publication_rng_seed": 43,
+    "tag": "std_stageA_gin11a_s43",
+    "report": "runtime/spn_phys5/p53_B0_std_stageA_gin11a_s43_h40_report.json",
+    "onset": 150,
+    "hold": 40,
+    "blocks": 350,
+    "runs": 350,
+    "results": {
+      "dTP53_hold": 32.01942857142857,
+      "dMDM2_post": 4.769214285714286,
+      "follow": 0.9942857142857143,
+      "verdict_plain": "std onset=150 blocks=350 hold=40: ΔTP53=+32.019 follow=99.4% ΔMDM2_post=+4.769"
+    },
+    "peak_timing_step_t_gt_50": {
+      "MDM2.promoter.active": 197,
+      "MDM2.RNA": 198,
+      "MDM2.protein": 204,
+      "lag_prom_minus_rna": -1,
+      "lag_protein_minus_rna": 6,
+      "laghunt_job": "1192"
+    }
+  },
+  "docs": [
+    "docs/P53_PUBLICATION_GIN11A_PIPELINE.md",
+    "docs/locks/p53_pub_gin11a_hs0_20260929.json"
+  ]
+}

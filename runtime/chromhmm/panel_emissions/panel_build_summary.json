@@ -1,0 +1,29 @@
+{
+  "huvec": {
+    "eid": "E122",
+    "emission_tsv": "runtime/chromhmm/panel_emissions/huvec_E122_promoter_emission.tsv",
+    "n_promoter_rows": 4,
+    "mnemonics": [
+      "TssA",
+      "TssAFlnk",
+      "TssAFlnk",
+      "EnhBiv"
+    ],
+    "activities": [
+      "active",
+      "active",
+      "active",
+      "inactive"
+    ],
+    "weights": {
+      "H3K4ME3": 0.4260702055312652,
+      "H3K4ME1": -0.14385029233129565,
+      "H3K36ME3": 0.0007075003350911619,
+      "H3K27ME3": -0.835258804660583,
+      "H3K9ME3": -0.0021083025520530446,
+      "H3K27AC": 0.43993615476531844
+    },
+    "n_active": 3,
+    "n_inactive": 1
+  }
+}

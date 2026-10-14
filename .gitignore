@@ -1,0 +1,34 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+.venv/
+.venv_*/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.idea/
+.vscode/
+
+# Unpacked prior (~787 MB); keep data/GINv3.11a.sifi.gz in git
+/GINv3.11a.sifi
+
+# Regenerated run products (use expected/ + --from-expected for fingerprint checks)
+/gin_out/**
+!/gin_out/.gitkeep
+/runtime/spn_phys5/**
+!/runtime/spn_phys5/.gitkeep
+/benchmarks/**
+!/benchmarks/subgraph-speed/
+/benchmarks/subgraph-speed/**
+!/benchmarks/subgraph-speed/.gitkeep
+/manuscript/figures/fig3/**
+!/manuscript/figures/fig3/.gitkeep
+/manuscript/figures/fig4/**
+!/manuscript/figures/fig4/.gitkeep
+
+# Local notes / OS junk
+*.swp
+*~

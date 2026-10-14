@@ -1,0 +1,42 @@
+p53 + curated metabolites (classical mechanism; NOT official KEGG hsa04115 compounds)
+
+Context
+-------
+KEGG map/hsa04115 (p53 signaling) has no COMPOUND members. Metabolites below are
+added from textbook p53–PI3K/Akt/mTOR–AMPK–redox crosstalk so gene+met subgraph
+demos can include lipid second messengers and energy/redox cofactors.
+
+Gene seeds: genes.txt = seedLists/kegg_p53_signaling.txt (KEGG p53 gene set).
+
+Metabolite seeds (GIN-mapped tokens in metabolites.txt)
+-------------------------------------------------------
+Token        Approx. identity     Classical link
+SID7226      PIP2 / PI(4,5)P2     PI3K substrate; PTEN regenerates PIP2 from PIP3
+SID4419      PtdIns / PI          PI cycle backbone feeding PIP2/PIP3
+SID3706      phosphatidate (PA)   adjacent PI / DAG lipid signaling
+SID8144912   ADP                  energy charge with ATP/AMP; kinase products
+SID5893      NAD+                 SIRT1–p53; redox
+SID8145742   NADH                 NAD+/NADH pair
+SID3308      NADP+                PPP / oxidative stress context
+SID8145663   NADPH                biosynthetic / antioxidant reducing power
+CID5793      D-glucose            growth-factor / insulin → PI3K nutrient input
+SID8143535   dGTP                 nucleotide pools under p53 DNA-damage programs
+SID8144688   dTTP                 nucleotide pools
+SID8144064   UDP                  sugar-nucleotide / glycosylation periphery
+
+Intended classical metabolites NOT in GINv3.11 metabolite layer (documented misses)
+----------------------------------------------------------------------------------
+KEGG/name    Why wanted                              Status on current GIN
+ATP C00002   universal PI3K/Akt/mTOR cosubstrate     PubChem CID5957; no GIN node
+AMP C00020   AMPK → p53 / mTOR                       no GIN node
+PIP3 C11554  PI3K product; Akt PH recruitment        no GIN node (PIP2 present)
+leucine      mTORC1 amino-acid input                 no GIN node
+serine       one-carbon / p53 metabolic programs     no GIN node
+GTP/GDP      small-GTPase nucleotide cycle           no GIN node
+
+Narrative for figures
+---------------------
+Correct biology: PI3K converts PIP2→PIP3 and growth/nutrient cues couple to
+Akt–MDM2–p53 and mTOR. This seed set includes PIP2/PI/PA + redox + glucose +
+ADP, and explicitly notes missing ATP/AMP/PIP3 as a GIN coverage limit—not as
+absence of the mechanism.

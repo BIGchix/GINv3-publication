@@ -1,0 +1,11 @@
+{
+  "version_id": "p53_pub_gin11a_hs0_20260929",
+  "role": "Stage A",
+  "status": "FROZEN_PUBLICATION",
+  "PYTHONHASHSEED": "0",
+  "context_n_jobs": 20,
+  "n_edges": 11368,
+  "n_nodes": 4626,
+  "sha256_edges": "350b7cb9acc8eaa7b1454f3c912f5aa1d94742a5f05b7492ed01b447039e6a43",
+  "git_lock": "docs/locks/p53_pub_gin11a_hs0_20260929.json"
+}

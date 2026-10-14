@@ -1,0 +1,81 @@
+{
+  "tag": "std_stageA_gin11a_s43",
+  "spn_pipeline_version": "spn_std_h1_b0",
+  "timescale_factor": 2.718281828459045,
+  "hold": 40,
+  "onset": 150,
+  "half_lives": {
+    "protein": 3.6787944117144233,
+    "rna": 1.8393972058572117,
+    "promoter_active": 1.8393972058572117,
+    "out_route": 7.357588823428847
+  },
+  "prod_alpha_transcription": 1.0,
+  "promoter_incoming_edge_scale": 0.1,
+  "prod_m_max": 0.0,
+  "places": [
+    "MDM2.promoter.active",
+    "MDM2.RNA",
+    "MDM2.protein",
+    "TP53.protein"
+  ],
+  "arms": {
+    "control": {
+      "summary": {
+        "MDM2.promoter.active": {
+          "hold_mean": 0.6497296965833995,
+          "post_40": 0.6817757058568958,
+          "late_post_to_end": 0.5146381487342387
+        },
+        "MDM2.RNA": {
+          "hold_mean": 1.97401428571428,
+          "post_40": 2.048871428571423,
+          "late_post_to_end": 1.9757197166469842
+        },
+        "MDM2.protein": {
+          "hold_mean": 1.0133571428571428,
+          "post_40": 1.1036428571428571,
+          "late_post_to_end": 1.0591499409681226
+        },
+        "TP53.protein": {
+          "hold_mean": 20.726285714285716,
+          "post_40": 21.57764285714286,
+          "late_post_to_end": 20.71546635182999
+        }
+      }
+    },
+    "step": {
+      "summary": {
+        "MDM2.promoter.active": {
+          "hold_mean": 1.3284613023771263,
+          "post_40": 2.5885543703092173,
+          "late_post_to_end": 0.5521996780542088
+        },
+        "MDM2.RNA": {
+          "hold_mean": 3.0917999999999943,
+          "post_40": 4.847371428571425,
+          "late_post_to_end": 1.976900354191258
+        },
+        "MDM2.protein": {
+          "hold_mean": 2.2311428571428573,
+          "post_40": 5.872857142857143,
+          "late_post_to_end": 1.0834002361275088
+        },
+        "TP53.protein": {
+          "hold_mean": 52.74571428571428,
+          "post_40": 44.20514285714286,
+          "late_post_to_end": 19.9356080283353
+        }
+      }
+    }
+  },
+  "follow_vs_control": {
+    "mean_dTP53_hold_vs_ctrl": 32.01942857142857,
+    "mean_dMDM2_post_vs_ctrl": 4.769214285714286,
+    "median_dTP53_hold": 26.137500000000003,
+    "median_dMDM2_post": 2.3625,
+    "rate_follow_vs_ctrl": 0.9942857142857143,
+    "rate_MDM2_post_up": 0.9942857142857143,
+    "rate_TP53_hold_up": 1.0
+  }
+}

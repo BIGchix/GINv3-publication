@@ -1,0 +1,219 @@
+{
+  "version_id": "p53_pub_fig4cd_noprune_gin11a_20261001",
+  "canonical_name": "p53 publication Fig4 C/D \u00b7 noprune \u00d7 Stage A gin11a (metsrc levels)",
+  "status": "FROZEN_PUBLICATION",
+  "role": "Figure 4C (Simulated histones) + Figure 4D (Simulated promoters)",
+  "parent_lock": "p53_pub_gin11a_hs0_20260929",
+  "locked_at": "2026-10-01T11:56:25Z",
+  "board_style_reference": "manuscript/figures/fig4/fig4-2.pdf panels C/D",
+  "determinism": {
+    "PYTHONHASHSEED": "0",
+    "n_jobs": 20,
+    "seed": 42,
+    "note": "Repro with same hash seed + n_jobs; do not overwrite freeze paths."
+  },
+  "pipeline": {
+    "id": "fig4cd_noprune_gin11a_stageA",
+    "grn_prune": false,
+    "chromhmm_signed": false,
+    "spn_pipeline_version": "spn_v5_degrade_anc_source",
+    "maintain_seeds": true,
+    "blocks": 200,
+    "runs": 200,
+    "plateau_blocks": 100,
+    "traj_aggregate": "plateau_mean",
+    "metric": "pearson",
+    "linkage": "average on 1-r",
+    "place_levels_suffix": "rna_plus_met_sources_place_levels.tsv",
+    "levels_note": "Unified file family for all 6 cells (fixes H1 seed-only rna_place_levels asymmetry)",
+    "runner": "scripts/run_fig4cd_noprune_gin11a_stageA.py",
+    "sbatch": "scripts/sbatch_fig4cd_noprune_gin11a_stageA.sh",
+    "plotter": "scripts/run_fig4bcd_gin11a_from_stageA.py::plot_cell_corr_heatmap"
+  },
+  "stage_a": {
+    "path": "gin_out/p53_shared_context_v4_rh1_gin11a",
+    "edges_tsv": "gin_out/p53_shared_context_v4_rh1_gin11a/subgraph_edges.tsv",
+    "sha256_edges": "350b7cb9acc8eaa7b1454f3c912f5aa1d94742a5f05b7492ed01b447039e6a43",
+    "n_edges_lines": 11368,
+    "from_parent_lock": true
+  },
+  "work_dir": {
+    "path": "gin_out/p53_fig4_gin11a_noprune_cd",
+    "edges_tsv": "gin_out/p53_fig4_gin11a_noprune_cd/subgraph_edges.tsv",
+    "sha256_edges": "350b7cb9acc8eaa7b1454f3c912f5aa1d94742a5f05b7492ed01b447039e6a43",
+    "n_edges_lines": 11368,
+    "edges_match_stage_a": true,
+    "corr_json": "gin_out/p53_fig4_gin11a_noprune_cd/corr_by_layer_noprune_gin11a_plateau100.json",
+    "sha256_corr": "e6bdff73e922ef62b92237e86933f1db4263c16db6c2f015beec6e3775fe3c5d",
+    "spn": {
+      "n_places": 1497,
+      "n_transitions": 3791,
+      "n_arcs": 11603,
+      "maintain_seeds": true,
+      "spn_pipeline_version": "spn_v5_degrade_anc_source"
+    }
+  },
+  "place_levels": {
+    "H1": {
+      "cell_id": "h1_wa01",
+      "path": "runtime/omics_seed/cellline_levels/h1_wa01/h1_wa01_rna_plus_met_sources_place_levels.tsv",
+      "sha256": "73ea941e5d11ccc96296d64300add8982b06dd244f712c39cabbc85cd2668e44",
+      "bytes": 4874,
+      "n_rows": 294
+    },
+    "H9": {
+      "cell_id": "h9_wa09",
+      "path": "runtime/omics_seed/cellline_levels/h9_wa09/h9_wa09_rna_plus_met_sources_place_levels.tsv",
+      "sha256": "af95503f228bad6efc94c7b71ca418ed592c765df8fe2a42ce480a84aa0b9f3e",
+      "bytes": 14451,
+      "n_rows": 289
+    },
+    "HUVEC": {
+      "cell_id": "huvec",
+      "path": "runtime/omics_seed/cellline_levels/huvec/huvec_rna_plus_met_sources_place_levels.tsv",
+      "sha256": "ef6dfd6d7c9cd0a20e717e457e2c7a1fa2ca0a4adf2aa61f8243d8cde39f4f85",
+      "bytes": 14230,
+      "n_rows": 285
+    },
+    "IMR90": {
+      "cell_id": "imr90",
+      "path": "runtime/omics_seed/cellline_levels/imr90/imr90_rna_plus_met_sources_place_levels.tsv",
+      "sha256": "648303061f3bec12b7a8b07e129badc0ef39c0068c6edb9bb6f0fd31f7f378e4",
+      "bytes": 13180,
+      "n_rows": 264
+    },
+    "NHEK": {
+      "cell_id": "keratinocyte",
+      "path": "runtime/omics_seed/cellline_levels/keratinocyte/keratinocyte_rna_plus_met_sources_place_levels.tsv",
+      "sha256": "3a6a2c74df0e4e77d323e3d867e4c719cfcc99df661899e3ad6dddef84f0f37a",
+      "bytes": 13986,
+      "n_rows": 279
+    },
+    "CD4": {
+      "cell_id": "tcell_cd4",
+      "path": "runtime/omics_seed/cellline_levels/tcell_cd4/tcell_cd4_rna_plus_met_sources_place_levels.tsv",
+      "sha256": "48aac6576339e50425cbdd76182f8b70121aeef3aacfad17f37959d6809a7fc6",
+      "bytes": 12981,
+      "n_rows": 260
+    }
+  },
+  "trajectories_metsrc": {
+    "H1": {
+      "path": "gin_out/p53_fig4_gin11a_noprune_cd/spn_sim/p53_noprune_gin11a_h1_wa01_metsrc_b200_n200_trajectory.json",
+      "sha256": "a893ef0a6672a2fa6b42cce28e1f599a1221a982fce3795b11313c8ab1fb06fd",
+      "bytes": 11471987
+    },
+    "H9": {
+      "path": "gin_out/p53_fig4_gin11a_noprune_cd/spn_sim/p53_noprune_gin11a_h9_wa09_metsrc_b200_n200_trajectory.json",
+      "sha256": "e2481672f4f123a9fa2c97cbf3aa071c352f4d70b237592ac4f8429c4201b51b",
+      "bytes": 11411834
+    },
+    "HUVEC": {
+      "path": "gin_out/p53_fig4_gin11a_noprune_cd/spn_sim/p53_noprune_gin11a_huvec_metsrc_b200_n200_trajectory.json",
+      "sha256": "5620f93c5fb0d6c3a317d11e7dcb334fcc2cc57b85d802dbf0bf56e87f587352",
+      "bytes": 11365812
+    },
+    "IMR90": {
+      "path": "gin_out/p53_fig4_gin11a_noprune_cd/spn_sim/p53_noprune_gin11a_imr90_metsrc_b200_n200_trajectory.json",
+      "sha256": "f6568da939c8eda792d9a3835f3b23c42f825797e6bc50ba176b6ebd9eb56a48",
+      "bytes": 11239439
+    },
+    "NHEK": {
+      "path": "gin_out/p53_fig4_gin11a_noprune_cd/spn_sim/p53_noprune_gin11a_keratinocyte_metsrc_b200_n200_trajectory.json",
+      "sha256": "b1f2ac658419714a377842b17cd5ba387a7fad08f5adf0d77458cae2fe2d7c64",
+      "bytes": 11328684
+    },
+    "CD4": {
+      "path": "gin_out/p53_fig4_gin11a_noprune_cd/spn_sim/p53_noprune_gin11a_tcell_cd4_metsrc_b200_n200_trajectory.json",
+      "sha256": "934ba82fcc83b15a6018467adb13ef3e56dd4ff6ce2f2869694dac26239697bc",
+      "bytes": 11191917
+    }
+  },
+  "panels": {
+    "C": {
+      "layer": "histone_mark",
+      "title": "Simulated histones",
+      "n_places": 512,
+      "offdiag_range": [
+        0.9041482654126489,
+        0.9904469940974803
+      ],
+      "vmin": 0.9,
+      "vmax": 1.0,
+      "cmap": "wine",
+      "leaf_order": [
+        "CD4",
+        "NHEK",
+        "H9",
+        "HUVEC",
+        "H1",
+        "IMR90"
+      ],
+      "H1_H9_pearson": 0.9814555743578671,
+      "pdf": "manuscript/figures/fig4/fig4_C_gin11a_noprune_histone.pdf",
+      "png": "manuscript/figures/fig4/fig4_C_gin11a_noprune_histone.png",
+      "meta": "manuscript/figures/fig4/fig4_C_gin11a_noprune_histone_meta.json",
+      "sha256_pdf": "9b1940db251196cdfb076858876362375a9fdfb434a1581ac3b3825c9d229b0e",
+      "sha256_png": "bcbf0e693be4acdff30c3db75842d166b9084a2615f4a9c6d7bbfb4f8d5bf479"
+    },
+    "D": {
+      "layer": "promoter.active",
+      "title": "Simulated promoters",
+      "n_places": 81,
+      "offdiag_range": [
+        0.964115376991643,
+        0.9947292188753006
+      ],
+      "vmin": 0.96,
+      "vmax": 1.0,
+      "cmap": "vivid_red",
+      "leaf_order": [
+        "CD4",
+        "HUVEC",
+        "H1",
+        "H9",
+        "IMR90",
+        "NHEK"
+      ],
+      "H1_H9_pearson": 0.9947292188753006,
+      "pdf": "manuscript/figures/fig4/fig4_D_gin11a_noprune_promoter.pdf",
+      "png": "manuscript/figures/fig4/fig4_D_gin11a_noprune_promoter.png",
+      "meta": "manuscript/figures/fig4/fig4_D_gin11a_noprune_promoter_meta.json",
+      "sha256_pdf": "e668337cb31cf71b5aa2cdd816135c11b480c39c2b24b30a10a49c19a52cca8f",
+      "sha256_png": "3d5816545c02380b4074ddaef4759fef1e29c1207f5daad9cacfd420744ec64c"
+    }
+  },
+  "backup": {
+    "snapshot_dir": "gin_out/locks/p53_pub_fig4cd_noprune_gin11a_20261001/",
+    "bundle_tar_gz": "gin_out/locks/p53_pub_fig4cd_noprune_gin11a_20261001/p53_pub_fig4cd_noprune_gin11a_20261001_bundle.tar.gz",
+    "bundle_sha256": "c8d49d179af881f012a4c73df275a4c6e860b264abd7395d1224dd0bd8cd6a2e",
+    "bundle_bytes": 22678561
+  },
+  "do_not_overwrite": [
+    "gin_out/p53_fig4_gin11a_noprune_cd/",
+    "manuscript/figures/fig4/fig4_C_gin11a_noprune_histone.pdf",
+    "manuscript/figures/fig4/fig4_C_gin11a_noprune_histone.png",
+    "manuscript/figures/fig4/fig4_C_gin11a_noprune_histone_meta.json",
+    "manuscript/figures/fig4/fig4_D_gin11a_noprune_promoter.pdf",
+    "manuscript/figures/fig4/fig4_D_gin11a_noprune_promoter.png",
+    "manuscript/figures/fig4/fig4_D_gin11a_noprune_promoter_meta.json",
+    "gin_out/locks/p53_pub_fig4cd_noprune_gin11a_20261001/",
+    "docs/locks/p53_pub_fig4cd_noprune_gin11a_20261001.json",
+    "runtime/omics_seed/cellline_levels/h1_wa01/h1_wa01_rna_plus_met_sources_place_levels.tsv",
+    "runtime/omics_seed/cellline_levels/h9_wa09/h9_wa09_rna_plus_met_sources_place_levels.tsv",
+    "runtime/omics_seed/cellline_levels/huvec/huvec_rna_plus_met_sources_place_levels.tsv",
+    "runtime/omics_seed/cellline_levels/imr90/imr90_rna_plus_met_sources_place_levels.tsv",
+    "runtime/omics_seed/cellline_levels/keratinocyte/keratinocyte_rna_plus_met_sources_place_levels.tsv",
+    "runtime/omics_seed/cellline_levels/tcell_cd4/tcell_cd4_rna_plus_met_sources_place_levels.tsv"
+  ],
+  "assert_script": "scripts/assert_p53_pub_fig4cd_noprune_lock.py",
+  "not_this_pipeline": {
+    "note": "Do NOT use prune+emw / spn_std_h1_b0 six-cell runs as Fig4 C/D publication panels.",
+    "rejected_paths": [
+      "gin_out/p53_fig4_gin11a_prune_emw_cd/",
+      "manuscript/figures/fig4/fig4_C_gin11a_prune_emw_histone.*",
+      "manuscript/figures/fig4/fig4_D_gin11a_prune_emw_promoter.*",
+      "gin_out/p53_cell_grn_prune/spn_sim/corr_by_layer_phys6_plateau100.json"
+    ]
+  }
+}

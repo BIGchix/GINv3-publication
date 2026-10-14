@@ -1,0 +1,9 @@
+{
+  "slug": "p53_pi3k_curated",
+  "title": "KEGG p53 genes + curated PI3K/redox metabolites",
+  "gene_source": "seedLists/kegg_p53_signaling.txt",
+  "metabolite_source": "classical p53\u2013PI3K/Akt/mTOR\u2013redox (manual); see SOURCE.txt",
+  "n_genes": 73,
+  "n_metabolite_seeds": 12,
+  "note": "KEGG hsa04115 has zero official compounds; metabolites are curated."
+}

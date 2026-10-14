@@ -1,0 +1,90 @@
+{
+  "version_id": "p53_pub_gin11a_20260929",
+  "canonical_name": "p53 publication pipeline · GINv3.11a",
+  "locked_at": "2026-09-29T03:57:48Z",
+  "git_commit_at_lock": "15e35968fc11112fbb82a38e089012ec01249345",
+  "status": "FROZEN_PUBLICATION",
+  "do_not_overwrite": [
+    "GINv3.11a.sifi",
+    "gin_out/p53_shared_context_v4_rh1_gin11a/",
+    "gin_out/p53_stageA_gin11a_h1_grn_prune/h1_wa01/"
+  ],
+  "gin": {
+    "sifi": "GINv3.11a.sifi",
+    "derived_from": "GINv3.11.sifi minus StageA-only extras vs hist_repro",
+    "builder": "scripts/build_ginv3_11a_from_stageA_extras.py",
+    "sbatch": "scripts/sbatch_build_ginv3_11a.sh",
+    "sha256": "192b2cb5a8147324fc41064a3f20c943a3d82c03972cff544e3d26219e7ace83",
+    "bytes": 824892563
+  },
+  "stage_a": {
+    "path": "gin_out/p53_shared_context_v4_rh1_gin11a",
+    "edges_tsv": "gin_out/p53_shared_context_v4_rh1_gin11a/subgraph_edges.tsv",
+    "n_edges": 11372,
+    "n_nodes": 4630,
+    "n_neg": 332,
+    "sha256_edges": "37cfa1c926500ca9721c5c6696689afe88918045aa7c2d6473bbaba76a0c98e7",
+    "context_pipeline_version": "context_v4_hme_soft_metenz3a_dogma_hme_seedhist_dropnsact_histprune",
+    "context_mech_depth": 2,
+    "real_hop": 1,
+    "seeds": "seedLists/p53_pi3k_curated/ via scripts/build_p53_pi3k_comma_seeds.sh",
+    "active_tfs": "seedLists/p53_pi3k_curated/active_tfs_rwrC_emp05.txt",
+    "sbatch": "scripts/sbatch_p53_stageA_gin11a.sh",
+    "vs_hist_repro_jaccard": 0.991246,
+    "vs_old_stageA_jaccard": 0.906947
+  },
+  "stage_b_h1": {
+    "path": "gin_out/p53_stageA_gin11a_h1_grn_prune/h1_wa01",
+    "edges_tsv": "gin_out/p53_stageA_gin11a_h1_grn_prune/h1_wa01/subgraph_edges.tsv",
+    "n_edges": 11367,
+    "n_nodes": 4630,
+    "n_neg": 332,
+    "sha256_edges": "be8a73329ed766297fb59173320405db949e8d3b9b6202ab9a038c2109770438",
+    "n_edges_in": 11372,
+    "n_edges_out": 11367,
+    "n_edges_removed_total": 5,
+    "builder": "scripts/build_realhop1_cell_spn.py",
+    "sbatch_full": "scripts/sbatch_p53_stageA_gin11a_h1_std_pulse.sh",
+    "spn": {
+      "n_places": 1499,
+      "n_transitions": 4388,
+      "n_arcs": 12198
+    }
+  },
+  "stage_c_pulse": {
+    "spn_pipeline_version": "spn_std_h1_b0",
+    "policy": "gin_tool/subgraph_pipeline/spn_standard_policy.py",
+    "entry": "scripts/run_p53_b0_std_pulse.py",
+    "onset": 150,
+    "hold": 40,
+    "blocks": 350,
+    "runs": 350,
+    "publication_rng_seed": 48,
+    "tag": "std_stageA_gin11a_s48",
+    "report": "runtime/spn_phys5/p53_B0_std_stageA_gin11a_s48_h40_report.json",
+    "results": {
+      "dTP53_hold": 31.765,
+      "dMDM2_post": 5.044499999999999,
+      "follow": 0.9971428571428571,
+      "verdict_plain": "std onset=150 blocks=350 hold=40: ΔTP53=+31.765 follow=99.7% ΔMDM2_post=+5.044"
+    },
+    "peak_timing_step_t_gt_50": {
+      "MDM2.promoter.active": 198,
+      "MDM2.RNA": 199,
+      "MDM2.protein": 204,
+      "lag_prom_minus_rna": -1,
+      "lag_protein_minus_rna": 5,
+      "note": "user-accepted timing for publication showcase"
+    }
+  },
+  "related_but_not_publication": {
+    "old_stage_a_rh1": "gin_out/p53_shared_context_v4_rh1 (12318 edges; pre-gin11a)",
+    "hist_repro": "gin_out/p53_hist_repro_subgraph (11374; historical lineage lock)",
+    "gin_v3_11": "GINv3.11.sifi (parent; do not use for pub Stage A)"
+  },
+  "docs": [
+    "docs/P53_PUBLICATION_GIN11A_PIPELINE.md",
+    "docs/P53_PUBLICATION_PIPELINE_HANDOFF.md",
+    "docs/SPN_P53_STANDARD_PIPELINE.md"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "version_id": "p53_pub_fig4cd_noprune_gin11a_20261001",
+  "status": "FROZEN_PUBLICATION",
+  "role": "Figure 4C/D noprune",
+  "lock": "docs/locks/p53_pub_fig4cd_noprune_gin11a_20261001.json",
+  "backup": "gin_out/locks/p53_pub_fig4cd_noprune_gin11a_20261001/",
+  "do_not_overwrite": true
+}

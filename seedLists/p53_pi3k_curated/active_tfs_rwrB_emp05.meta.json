@@ -1,0 +1,8 @@
+{
+  "null_strength": "cohesion",
+  "emp_p_cutoff": 0.05,
+  "n_active": 275,
+  "source": "benchmarks/subgraph-speed/p53_rwr_null_B_cohesion_full.json",
+  "pipeline_default": true,
+  "note": "B/cohesion = pipeline default; C/rewire optional via active_tfs_rwrC_emp05.txt"
+}

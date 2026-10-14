@@ -1,0 +1,58 @@
+{
+  "TP53.protein": {
+    "control": {
+      "arm": "control",
+      "peak_block": 178,
+      "peak_tokens": 21.771428571428572,
+      "search": "block>50"
+    },
+    "step": {
+      "arm": "step",
+      "peak_block": 190,
+      "peak_tokens": 95.32,
+      "search": "block>50"
+    }
+  },
+  "MDM2.protein": {
+    "control": {
+      "arm": "control",
+      "peak_block": 179,
+      "peak_tokens": 1.2314285714285715,
+      "search": "block>50"
+    },
+    "step": {
+      "arm": "step",
+      "peak_block": 201,
+      "peak_tokens": 8.94,
+      "search": "block>50"
+    }
+  },
+  "MDM2.RNA": {
+    "control": {
+      "arm": "control",
+      "peak_block": 198,
+      "peak_tokens": 2.103228571428566,
+      "search": "block>50"
+    },
+    "step": {
+      "arm": "step",
+      "peak_block": 195,
+      "peak_tokens": 6.520371428571447,
+      "search": "block>50"
+    }
+  },
+  "MDM2.promoter.active": {
+    "control": {
+      "arm": "control",
+      "peak_block": 179,
+      "peak_tokens": 0.6866323599823375,
+      "search": "block>50"
+    },
+    "step": {
+      "arm": "step",
+      "peak_block": 198,
+      "peak_tokens": 3.25156862356365,
+      "search": "block>50"
+    }
+  }
+}

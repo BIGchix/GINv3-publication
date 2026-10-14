@@ -1,0 +1,129 @@
+{
+  "h1_wa01": {
+    "eid": "E003",
+    "emission_tsv": "runtime/chromhmm/panel_emissions/h1_wa01_E003_promoter_emission.tsv",
+    "n_promoter_rows": 4,
+    "mnemonics": [
+      "TssA",
+      "TssAFlnk",
+      "BivFlnk",
+      "TssBiv"
+    ],
+    "activities": [
+      "active",
+      "active",
+      "inactive",
+      "inactive"
+    ],
+    "weights": {
+      "H3K4ME3": -0.02776819376794193,
+      "H3K4ME1": -0.04355097098159805,
+      "H3K36ME3": -0.010974399188376534,
+      "H3K27ME3": -0.9033649715149402,
+      "H3K9ME3": -0.005968275460740054,
+      "H3K27AC": 0.5562102001913041
+    },
+    "n_active": 2,
+    "n_inactive": 2
+  },
+  "h9_wa09": {
+    "eid": "E008",
+    "emission_tsv": "runtime/chromhmm/panel_emissions/h9_wa09_E008_promoter_emission.tsv",
+    "n_promoter_rows": 4,
+    "mnemonics": [
+      "TssBiv",
+      "TssA",
+      "TssA",
+      "TssAFlnk"
+    ],
+    "activities": [
+      "inactive",
+      "active",
+      "active",
+      "active"
+    ],
+    "weights": {
+      "H3K4ME3": -0.05256695660029842,
+      "H3K4ME1": 0.10760528530070258,
+      "H3K36ME3": 0.00820434611234531,
+      "H3K27ME3": -0.8075100938059492,
+      "H3K9ME3": 0.09371197552422603,
+      "H3K27AC": 0.629264085510175
+    },
+    "n_active": 3,
+    "n_inactive": 1
+  },
+  "imr90": {
+    "eid": "E017",
+    "emission_tsv": "runtime/chromhmm/panel_emissions/imr90_E017_promoter_emission.tsv",
+    "n_promoter_rows": 3,
+    "mnemonics": [
+      "BivFlnk",
+      "TssA",
+      "TssAFlnk"
+    ],
+    "activities": [
+      "inactive",
+      "active",
+      "active"
+    ],
+    "weights": {
+      "H3K4ME3": 0.06790926332412894,
+      "H3K4ME1": -0.0877415034929192,
+      "H3K36ME3": -0.0030056239483368836,
+      "H3K27ME3": -0.8270239949067898,
+      "H3K9ME3": -0.06568956820873788,
+      "H3K27AC": 0.5778202802448614
+    },
+    "n_active": 2,
+    "n_inactive": 1
+  },
+  "keratinocyte": {
+    "eid": "E127",
+    "emission_tsv": "runtime/chromhmm/panel_emissions/keratinocyte_E127_promoter_emission.tsv",
+    "n_promoter_rows": 2,
+    "mnemonics": [
+      "TssA",
+      "BivFlnk"
+    ],
+    "activities": [
+      "active",
+      "inactive"
+    ],
+    "weights": {
+      "H3K4ME3": 0.22526637554132245,
+      "H3K4ME1": -0.45329565312235637,
+      "H3K36ME3": 0.00025114094029997716,
+      "H3K27ME3": -0.8634342983277006,
+      "H3K9ME3": -0.028892608925266208,
+      "H3K27AC": 0.861812176362146
+    },
+    "n_active": 1,
+    "n_inactive": 1
+  },
+  "tcell_cd4": {
+    "eid": "E043",
+    "emission_tsv": "runtime/chromhmm/panel_emissions/tcell_cd4_E043_promoter_emission.tsv",
+    "n_promoter_rows": 3,
+    "mnemonics": [
+      "EnhBiv",
+      "TssAFlnk",
+      "TssA"
+    ],
+    "activities": [
+      "inactive",
+      "active",
+      "active"
+    ],
+    "weights": {
+      "H3K4ME3": 0.5375848599010524,
+      "H3K4ME1": -0.32767343858878917,
+      "H3K36ME3": 0.015694657561488,
+      "H3K27ME3": -0.6486953346106568,
+      "H3K9ME3": -0.006124019352973027,
+      "H3K27AC": 0.5346001201377467
+    },
+    "n_active": 2,
+    "n_inactive": 1
+  }
+}

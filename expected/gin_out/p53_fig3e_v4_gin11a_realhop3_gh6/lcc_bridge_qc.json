@@ -1,0 +1,20 @@
+{
+  "n_cc_before": 2,
+  "n_cc_after": 2,
+  "main_size_before": 20787,
+  "bridge_edges_added": 0,
+  "bridge_nodes_added": 0,
+  "satellite_nodes_scanned": 2,
+  "satellite_nodes_reached": 0,
+  "satellite_components_before": 1,
+  "max_hops": 2,
+  "hop_kind": "graph-hop",
+  "mode": "shortest_path_dag",
+  "hop_note": "Each directed GIN edge = 1 graph-hop. graph-hop=2 ≈ one real-hop (R→V→R) on strict bipartite GIN; this is NOT real-hop BFS.",
+  "island_sizes_before": [
+    2
+  ],
+  "island_sizes_after": [
+    2
+  ]
+}

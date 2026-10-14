@@ -1,0 +1,113 @@
+{
+  "tag": "std_stageA_gin11a_s43",
+  "pipeline": "spn_std_h1_b0",
+  "legacy_alias": "v15cfea10e3ewe_o150b350_metsrc",
+  "subgraph_dir": "/disk1/usrData/chixData/multiOmicsIntegration/gin_out/p53_stageA_gin11a_h1_grn_prune/h1_wa01",
+  "place_levels": "/disk1/usrData/chixData/multiOmicsIntegration/runtime/omics_seed/cellline_levels/h1_wa01/h1_wa01_rna_plus_met_sources_place_levels.tsv",
+  "chromhmm_emission_tsv": "/disk1/usrData/chixData/multiOmicsIntegration/runtime/chromhmm/panel_emissions/h1_wa01_E003_promoter_emission.tsv",
+  "blocks": 350,
+  "strong_e3_inhibition_weight": 2.718281828459045,
+  "weak_e3_edge_scale": 0.36787944117144233,
+  "timescale_factor": 2.718281828459045,
+  "half_lives": {
+    "protein_half_life_blocks": 3.6787944117144233,
+    "rna_half_life_blocks": 1.8393972058572117,
+    "promoter_active_half_life_blocks": 1.8393972058572117,
+    "out_route_half_life_blocks": 7.357588823428847
+  },
+  "promoter_incoming_edge_scale": 0.1,
+  "prod_m_max": 0.0,
+  "prod_alpha_transcription": 1.0,
+  "translation_output_scale": 1.0,
+  "hold": 40,
+  "onset": 150,
+  "runs": 350,
+  "seed": 43,
+  "arms": {
+    "control": {
+      "arm": "control",
+      "skipped": false,
+      "sim_subdir": "spn_sim_std_B0ind_std_stageA_gin11a_s43_h40_control_oneshot",
+      "stem": "p53_B0ind_std_stageA_gin11a_s43_h40_control_once_b350_n350",
+      "trajectory_json": "/disk1/usrData/chixData/multiOmicsIntegration/gin_out/p53_stageA_gin11a_h1_grn_prune/h1_wa01/spn_sim_std_B0ind_std_stageA_gin11a_s43_h40_control_oneshot/p53_B0ind_std_stageA_gin11a_s43_h40_control_once_b350_n350_trajectory.json",
+      "pair_runs_npz": "/disk1/usrData/chixData/multiOmicsIntegration/gin_out/p53_stageA_gin11a_h1_grn_prune/h1_wa01/spn_sim_std_B0ind_std_stageA_gin11a_s43_h40_control_oneshot/p53_B0ind_std_stageA_gin11a_s43_h40_control_once_b350_n350_pair_runs.npz",
+      "spn_pipeline_version": "spn_std_h1_b0",
+      "promoter_incoming_edge_scale": 0.1,
+      "prod_m_max": 0.0,
+      "prod_alpha_transcription": 1.0,
+      "translation_output_scale": 1.0,
+      "tf_dna_edge_weight": 0.05,
+      "strong_e3_inhibition_weight": 2.718281828459045,
+      "weak_e3_edge_scale": 0.36787944117144233,
+      "tf_dna_edge_weight_base": 0.5
+    },
+    "step": {
+      "arm": "step",
+      "skipped": false,
+      "sim_subdir": "spn_sim_std_B0ind_std_stageA_gin11a_s43_h40_step_oneshot",
+      "stem": "p53_B0ind_std_stageA_gin11a_s43_h40_step_once_b350_n350",
+      "trajectory_json": "/disk1/usrData/chixData/multiOmicsIntegration/gin_out/p53_stageA_gin11a_h1_grn_prune/h1_wa01/spn_sim_std_B0ind_std_stageA_gin11a_s43_h40_step_oneshot/p53_B0ind_std_stageA_gin11a_s43_h40_step_once_b350_n350_trajectory.json",
+      "pair_runs_npz": "/disk1/usrData/chixData/multiOmicsIntegration/gin_out/p53_stageA_gin11a_h1_grn_prune/h1_wa01/spn_sim_std_B0ind_std_stageA_gin11a_s43_h40_step_oneshot/p53_B0ind_std_stageA_gin11a_s43_h40_step_once_b350_n350_pair_runs.npz",
+      "spn_pipeline_version": "spn_std_h1_b0",
+      "promoter_incoming_edge_scale": 0.1,
+      "prod_m_max": 0.0,
+      "prod_alpha_transcription": 1.0,
+      "translation_output_scale": 1.0,
+      "tf_dna_edge_weight": 0.05,
+      "strong_e3_inhibition_weight": 2.718281828459045,
+      "weak_e3_edge_scale": 0.36787944117144233,
+      "tf_dna_edge_weight_base": 0.5
+    }
+  },
+  "follow_vs_control": {
+    "mean_dTP53_hold_vs_ctrl": 32.01942857142857,
+    "mean_dMDM2_post_vs_ctrl": 4.769214285714286,
+    "median_dTP53_hold": 26.137500000000003,
+    "median_dMDM2_post": 2.3625,
+    "rate_follow_vs_ctrl": 0.9942857142857143,
+    "rate_MDM2_post_up": 0.9942857142857143,
+    "rate_TP53_hold_up": 1.0
+  },
+  "control_dynamics_pre_pulse": {
+    "TP53.protein": {
+      "pre_mean": 9.502,
+      "pre_end_vs_start": 19385714285.714287,
+      "pre_peak_block": 147,
+      "pre_peak_value": 19.52857142857143,
+      "late_end_vs_pre_mean": 2.0146134648344707,
+      "monotone_pre": false
+    },
+    "MDM2.protein": {
+      "pre_mean": 0.7327809523809524,
+      "pre_end_vs_start": 968571428.5714284,
+      "pre_peak_block": 2,
+      "pre_peak_value": 3.2,
+      "late_end_vs_pre_mean": 1.36076525174807,
+      "monotone_pre": false
+    }
+  },
+  "layer_coupling_step_minus_ctrl": {
+    "MDM2.promoter.active": {
+      "hold_delta": 0.6787316057937268,
+      "post_delta": 1.9067786644523215
+    },
+    "MDM2.RNA": {
+      "hold_delta": 1.1177857142857144,
+      "post_delta": 2.7985000000000024
+    },
+    "MDM2.protein": {
+      "hold_delta": 1.2177857142857145,
+      "post_delta": 4.769214285714286
+    },
+    "TP53.protein": {
+      "hold_delta": 32.01942857142856,
+      "post_delta": 22.6275
+    }
+  },
+  "track_outputs": {
+    "npz": "/disk1/usrData/chixData/multiOmicsIntegration/runtime/spn_phys5/p53_B0_std_stageA_gin11a_s43_h40_track_means.npz",
+    "png": "/disk1/usrData/chixData/multiOmicsIntegration/runtime/spn_phys5/p53_B0_std_stageA_gin11a_s43_h40_track_means.png",
+    "json": "/disk1/usrData/chixData/multiOmicsIntegration/runtime/spn_phys5/p53_B0_std_stageA_gin11a_s43_h40_track_means.json"
+  },
+  "verdict_plain": "std onset=150 blocks=350 hold=40: ΔTP53=+32.019 follow=99.4% ΔMDM2_post=+4.769"
+}

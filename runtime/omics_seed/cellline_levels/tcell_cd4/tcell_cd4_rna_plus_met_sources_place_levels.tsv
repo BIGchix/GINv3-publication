@@ -1,0 +1,261 @@
+place	level	layer	gene	raw_value	note
+AACS.RNA	2.479452	rna_tpm	AACS	4.26	rna_seed
+AASS.RNA	1.164384	rna_tpm	AASS	1.07	rna_seed
+ACAA1.RNA	7.534247	rna_tpm	ACAA1	28.37	rna_seed
+ACAA2.RNA	4.041096	rna_tpm	ACAA2	8.59	rna_seed
+ACADSB.RNA	4.821918	rna_tpm	ACADSB	13.12	rna_seed
+ACOT2.RNA	2.191781	rna_tpm	ACOT2	3.38	rna_seed
+ACSL4.RNA	3.794521	rna_tpm	ACSL4	7.72	rna_seed
+ACSS2.RNA	3.630137	rna_tpm	ACSS2	7.15	rna_seed
+ADAT2.RNA	2.273973	rna_tpm	ADAT2	3.79	rna_seed
+AIFM2.RNA	1.534247	rna_tpm	AIFM2	1.7	rna_seed
+AK1.RNA	6.671233	rna_tpm	AK1	20.94	rna_seed
+AK2.RNA	8.109589	rna_tpm	AK2	34.08	rna_seed
+AKR1A1.RNA	7.739726	rna_tpm	AKR1A1	30.41	rna_seed
+AKR1B1.RNA	8.027397	rna_tpm	AKR1B1	32.85	rna_seed
+AKR1C3.RNA	1.287671	rna_tpm	AKR1C3	1.24	rna_seed
+ALAS1.RNA	4.452055	rna_tpm	ALAS1	10.81	rna_seed
+ALDH18A1.RNA	4.410959	rna_tpm	ALDH18A1	10.56	rna_seed
+ALDH3A2.RNA	6.09589	rna_tpm	ALDH3A2	18.92	rna_seed
+ALDH5A1.RNA	2.767123	rna_tpm	ALDH5A1	5.03	rna_seed
+ALDH6A1.RNA	3.835616	rna_tpm	ALDH6A1	7.81	rna_seed
+APAF1.RNA	4.534247	rna_tpm	APAF1	11.12	rna_seed
+APP.RNA	6.260274	rna_tpm	APP	19.22	rna_seed
+ARID1A.RNA	8.479452	rna_tpm	ARID1A	40.35	rna_seed
+ARID1B.RNA	8.684932	rna_tpm	ARID1B	42.64	rna_seed
+ARID2.RNA	5.972603	rna_tpm	ARID2	18.67	rna_seed
+ASAH1.RNA	6.342466	rna_tpm	ASAH1	19.42	rna_seed
+ATF2.RNA	7.123288	rna_tpm	ATF2	23.83	rna_seed
+ATM.RNA	10.0	rna_tpm	ATM	189.29	rna_seed
+ATR.RNA	5.520548	rna_tpm	ATR	16.46	rna_seed
+BAX.RNA	9.136986	rna_tpm	BAX	65.89	rna_seed
+BBC3.RNA	4.575342	rna_tpm	BBC3	11.52	rna_seed
+BCL2.RNA	5.191781	rna_tpm	BCL2	14.73	rna_seed
+BCL2L1.RNA	3.712329	rna_tpm	BCL2L1	7.51	rna_seed
+BDH1.RNA	6.794521	rna_tpm	BDH1	21.97	rna_seed
+BID.RNA	3.876712	rna_tpm	BID	7.93	rna_seed
+BLVRB.RNA	2.643836	rna_tpm	BLVRB	4.42	rna_seed
+BRCA1.RNA	1.575342	rna_tpm	BRCA1	1.74	rna_seed
+CASP3.RNA	4.164384	rna_tpm	CASP3	8.98	rna_seed
+CASP8.RNA	9.465753	rna_tpm	CASP8	71.87	rna_seed
+CASP8AP2.RNA	6.876712	rna_tpm	CASP8AP2	22.24	rna_seed
+CASP9.RNA	2.438356	rna_tpm	CASP9	4.08	rna_seed
+CCAR2.RNA	9.753425	rna_tpm	CCAR2	77.09	rna_seed
+CCNB1.RNA	1.328767	rna_tpm	CCNB1	1.24	rna_seed
+CCND2.RNA	8.972603	rna_tpm	CCND2	54.21	rna_seed
+CCND3.RNA	9.835616	rna_tpm	CCND3	80.48	rna_seed
+CCNE1.RNA	1.123288	rna_tpm	CCNE1	1.06	rna_seed
+CCNG1.RNA	8.890411	rna_tpm	CCNG1	48.13	rna_seed
+CCNG2.RNA	3.958904	rna_tpm	CCNG2	8.25	rna_seed
+CD82.RNA	8.849315	rna_tpm	CD82	47.99	rna_seed
+CDK2.RNA	3.219178	rna_tpm	CDK2	6.3	rna_seed
+CDK4.RNA	5.767123	rna_tpm	CDK4	17.44	rna_seed
+CDK6.RNA	3.753425	rna_tpm	CDK6	7.66	rna_seed
+CDKN1A.RNA	2.315068	rna_tpm	CDKN1A	3.8	rna_seed
+CDKN2A.RNA	1.657534	rna_tpm	CDKN2A	2.19	rna_seed
+CHEK2.RNA	1.945205	rna_tpm	CHEK2	2.74	rna_seed
+COASY.RNA	7.287671	rna_tpm	COASY	25.65	rna_seed
+COP1.RNA	5.479452	rna_tpm	COP1	16.09	rna_seed
+COQ7.RNA	3.013699	rna_tpm	COQ7	5.83	rna_seed
+CREBBP.RNA	8.726027	rna_tpm	CREBBP	42.8	rna_seed
+CTNNB1.RNA	9.09589	rna_tpm	CTNNB1	63.59	rna_seed
+CUL4A.RNA	7.452055	rna_tpm	CUL4A	27.24	rna_seed
+CYB5R1.RNA	6.013699	rna_tpm	CYB5R1	18.7	rna_seed
+CYCS.RNA	5.684932	rna_tpm	CYCS	16.93	rna_seed
+CYP1B1.RNA	1.69863	rna_tpm	CYP1B1	2.31	rna_seed
+CYP24A1.RNA	1.205479	rna_tpm	CYP24A1	1.1	rna_seed
+CYP27A1.RNA	1.821918	rna_tpm	CYP27A1	2.58	rna_seed
+CYP2D6.RNA	2.109589	rna_tpm	CYP2D6	3.17	rna_seed
+CYP2E1.RNA	1.0	rna_tpm	CYP2E1	1	rna_seed
+CYP2R1.RNA	2.808219	rna_tpm	CYP2R1	5.31	rna_seed
+CYP2U1.RNA	1.863014	rna_tpm	CYP2U1	2.61	rna_seed
+CYP4F12.RNA	1.410959	rna_tpm	CYP4F12	1.34	rna_seed
+CYP51A1.RNA	2.890411	rna_tpm	CYP51A1	5.48	rna_seed
+DAXX.RNA	7.493151	rna_tpm	DAXX	27.55	rna_seed
+DCXR.RNA	7.205479	rna_tpm	DCXR	24.6	rna_seed
+DDB2.RNA	8.767123	rna_tpm	DDB2	47.44	rna_seed
+DECR1.RNA	6.547945	rna_tpm	DECR1	20.62	rna_seed
+DEGS1.RNA	6.712329	rna_tpm	DEGS1	21.11	rna_seed
+DHCR24.RNA	1.739726	rna_tpm	DHCR24	2.55	rna_seed
+DHCR7.RNA	3.054795	rna_tpm	DHCR7	5.84	rna_seed
+DHFR.RNA	3.506849	rna_tpm	DHFR	6.91	rna_seed
+DLAT.RNA	3.547945	rna_tpm	DLAT	6.98	rna_seed
+DLD.RNA	5.356164	rna_tpm	DLD	15.2	rna_seed
+DLST.RNA	8.315068	rna_tpm	DLST	37.42	rna_seed
+DNMT1.RNA	9.589041	rna_tpm	DNMT1	75.1	rna_seed
+DPYD.RNA	5.890411	rna_tpm	DPYD	18.43	rna_seed
+DTYMK.RNA	3.424658	rna_tpm	DTYMK	6.79	rna_seed
+E2F6.RNA	2.027397	rna_tpm	E2F6	2.87	rna_seed
+EHMT2.RNA	7.616438	rna_tpm	EHMT2	28.52	rna_seed
+EI24.RNA	4.863014	rna_tpm	EI24	13.27	rna_seed
+ELF1.RNA	9.260274	rna_tpm	ELF1	67.72	rna_seed
+ELOVL6.RNA	1.246575	rna_tpm	ELOVL6	1.19	rna_seed
+EP300.RNA	8.39726	rna_tpm	EP300	38.25	rna_seed
+EZH2.RNA	2.356164	rna_tpm	EZH2	3.81	rna_seed
+FAS.RNA	5.39726	rna_tpm	FAS	15.29	rna_seed
+FASN.RNA	4.369863	rna_tpm	FASN	9.98	rna_seed
+FDFT1.RNA	9.013699	rna_tpm	FDFT1	55.87	rna_seed
+FDXR.RNA	3.09589	rna_tpm	FDXR	5.99	rna_seed
+FOXO1.RNA	7.164384	rna_tpm	FOXO1	24.51	rna_seed
+G6PD.RNA	5.60274	rna_tpm	G6PD	16.61	rna_seed
+GADD45A.RNA	4.287671	rna_tpm	GADD45A	9.66	rna_seed
+GADD45B.RNA	7.863014	rna_tpm	GADD45B	31.86	rna_seed
+GADD45G.RNA	1.041096	rna_tpm	GADD45G	1.03	rna_seed
+GCAT.RNA	1.493151	rna_tpm	GCAT	1.59	rna_seed
+GMPR2.RNA	8.150685	rna_tpm	GMPR2	34.55	rna_seed
+GORAB.RNA	3.136986	rna_tpm	GORAB	6.13	rna_seed
+GPAT3.RNA	2.068493	rna_tpm	GPAT3	3.16	rna_seed
+GRHPR.RNA	6.589041	rna_tpm	GRHPR	20.63	rna_seed
+GSR.RNA	4.90411	rna_tpm	GSR	13.35	rna_seed
+GUK1.RNA	9.219178	rna_tpm	GUK1	66.7	rna_seed
+HDAC1.RNA	9.383562	rna_tpm	HDAC1	68.64	rna_seed
+HDAC2.RNA	6.219178	rna_tpm	HDAC2	19.12	rna_seed
+HDAC3.RNA	7.780822	rna_tpm	HDAC3	30.71	rna_seed
+HDAC4.RNA	5.808219	rna_tpm	HDAC4	18.11	rna_seed
+HDAC8.RNA	2.849315	rna_tpm	HDAC8	5.48	rna_seed
+HEXIM1.RNA	4.493151	rna_tpm	HEXIM1	11.1	rna_seed
+HIBADH.RNA	2.684932	rna_tpm	HIBADH	4.91	rna_seed
+HSD17B10.RNA	4.657534	rna_tpm	HSD17B10	11.77	rna_seed
+HSD17B12.RNA	3.260274	rna_tpm	HSD17B12	6.44	rna_seed
+IDH1.RNA	4.205479	rna_tpm	IDH1	9.35	rna_seed
+IDH3A.RNA	5.643836	rna_tpm	IDH3A	16.89	rna_seed
+IGFBP3.RNA	3.465753	rna_tpm	IGFBP3	6.85	rna_seed
+KAT2A.RNA	5.109589	rna_tpm	KAT2A	14.41	rna_seed
+KAT2B.RNA	7.69863	rna_tpm	KAT2B	29.32	rna_seed
+KDM2B.RNA	8.232877	rna_tpm	KDM2B	35.59	rna_seed
+KDM5D.RNA	9.547945	rna_tpm	KDM5D	74.58	rna_seed
+KDSR.RNA	6.917808	rna_tpm	KDSR	22.25	rna_seed
+KMT2A.RNA	9.178082	rna_tpm	KMT2A	66.61	rna_seed
+KMT2D.RNA	8.808219	rna_tpm	KMT2D	47.92	rna_seed
+MAML1.RNA	6.054795	rna_tpm	MAML1	18.91	rna_seed
+MAP2K1.RNA	6.383562	rna_tpm	MAP2K1	19.82	rna_seed
+MAX.RNA	9.671233	rna_tpm	MAX	76.56	rna_seed
+MDH2.RNA	7.657534	rna_tpm	MDH2	28.9	rna_seed
+MDM2.RNA	8.643836	rna_tpm	MDM2	42.31	rna_seed
+MDM4.RNA	9.712329	rna_tpm	MDM4	76.93	rna_seed
+MECR.RNA	2.972603	rna_tpm	MECR	5.69	rna_seed
+MEF2D.RNA	7.041096	rna_tpm	MEF2D	23.44	rna_seed
+MSMO1.RNA	4.082192	rna_tpm	MSMO1	8.8	rna_seed
+MTHFD1L.RNA	2.39726	rna_tpm	MTHFD1L	4.01	rna_seed
+MTHFR.RNA	6.178082	rna_tpm	MTHFR	19.01	rna_seed
+MYC.RNA	8.356164	rna_tpm	MYC	38.01	rna_seed
+NADK.RNA	6.465753	rna_tpm	NADK	20.21	rna_seed
+NAXD.RNA	4.616438	rna_tpm	NAXD	11.75	rna_seed
+NBN.RNA	4.986301	rna_tpm	NBN	13.42	rna_seed
+NFATC2.RNA	7.0	rna_tpm	NFATC2	23.42	rna_seed
+NME3.RNA	7.90411	rna_tpm	NME3	31.95	rna_seed
+NME4.RNA	4.780822	rna_tpm	NME4	12.59	rna_seed
+NNT.RNA	6.630137	rna_tpm	NNT	20.76	rna_seed
+NOTCH1.RNA	5.438356	rna_tpm	NOTCH1	15.52	rna_seed
+NRF1.RNA	5.027397	rna_tpm	NRF1	13.76	rna_seed
+NSDHL.RNA	1.780822	rna_tpm	NSDHL	2.57	rna_seed
+NUDT14.RNA	3.30137	rna_tpm	NUDT14	6.5	rna_seed
+OGDH.RNA	8.561644	rna_tpm	OGDH	41.84	rna_seed
+PAFAH2.RNA	3.342466	rna_tpm	PAFAH2	6.6	rna_seed
+PDHB.RNA	6.424658	rna_tpm	PDHB	19.84	rna_seed
+PERP.RNA	1.452055	rna_tpm	PERP	1.54	rna_seed
+PGD.RNA	4.945205	rna_tpm	PGD	13.36	rna_seed
+PHF2.RNA	5.068493	rna_tpm	PHF2	14.13	rna_seed
+PHF8.RNA	7.082192	rna_tpm	PHF8	23.5	rna_seed
+PI4K2B.RNA	2.931507	rna_tpm	PI4K2B	5.52	rna_seed
+PI4KA.RNA	8.931507	rna_tpm	PI4KA	51.14	rna_seed
+PIDD1.RNA	4.739726	rna_tpm	PIDD1	12.57	rna_seed
+PIP5K1A.RNA	5.849315	rna_tpm	PIP5K1A	18.33	rna_seed
+PMAIP1.RNA	2.150685	rna_tpm	PMAIP1	3.36	rna_seed
+PML.RNA	6.835616	rna_tpm	PML	22.17	rna_seed
+PMPCA.RNA	7.410959	rna_tpm	PMPCA	26.45	rna_seed
+PNPO.RNA	2.561644	rna_tpm	PNPO	4.35	rna_seed
+POMC.RNA	1.369863	rna_tpm	POMC	1.29	rna_seed
+PPM1D.RNA	3.589041	rna_tpm	PPM1D	6.99	rna_seed
+PPT1.RNA	6.958904	rna_tpm	PPT1	23.38	rna_seed
+PRKCQ.RNA	7.328767	rna_tpm	PRKCQ	25.8	rna_seed
+PTEN.RNA	7.575342	rna_tpm	PTEN	28.4	rna_seed
+PYCR2.RNA	8.60274	rna_tpm	PYCR2	42.01	rna_seed
+PYCR3.RNA	1.986301	rna_tpm	PYCR3	2.86	rna_seed
+QDPR.RNA	4.123288	rna_tpm	QDPR	8.8	rna_seed
+RB1.RNA	3.671233	rna_tpm	RB1	7.2	rna_seed
+RBL2.RNA	9.958904	rna_tpm	RBL2	131.38	rna_seed
+RCHY1.RNA	5.232877	rna_tpm	RCHY1	14.75	rna_seed
+RDH11.RNA	5.561644	rna_tpm	RDH11	16.59	rna_seed
+RRM1.RNA	5.150685	rna_tpm	RRM1	14.63	rna_seed
+RRM2B.RNA	3.178082	rna_tpm	RRM2B	6.21	rna_seed
+RUNX1.RNA	7.821918	rna_tpm	RUNX1	31.05	rna_seed
+RUNX3.RNA	8.520548	rna_tpm	RUNX3	40.4	rna_seed
+SC5D.RNA	4.328767	rna_tpm	SC5D	9.89	rna_seed
+SESN1.RNA	5.726027	rna_tpm	SESN1	17.06	rna_seed
+SESN2.RNA	1.616438	rna_tpm	SESN2	2.06	rna_seed
+SESN3.RNA	9.630137	rna_tpm	SESN3	76.08	rna_seed
+SETD7.RNA	2.726027	rna_tpm	SETD7	4.97	rna_seed
+SETDB1.RNA	7.369863	rna_tpm	SETDB1	26.2	rna_seed
+SHISA5.RNA	9.794521	rna_tpm	SHISA5	78.57	rna_seed
+SIAH1.RNA	2.520548	rna_tpm	SIAH1	4.3	rna_seed
+SIRT1.RNA	6.753425	rna_tpm	SIRT1	21.22	rna_seed
+SIVA1.RNA	7.246575	rna_tpm	SIVA1	25.01	rna_seed
+SLC27A5.RNA	2.60274	rna_tpm	SLC27A5	4.39	rna_seed
+SLC38A2.RNA	9.506849	rna_tpm	SLC38A2	72.16	rna_seed
+SMAD3.RNA	9.30137	rna_tpm	SMAD3	68	rna_seed
+SMARCA2.RNA	9.876712	rna_tpm	SMARCA2	82	rna_seed
+SMARCA4.RNA	8.068493	rna_tpm	SMARCA4	33.97	rna_seed
+SMARCB1.RNA	5.273973	rna_tpm	SMARCB1	14.85	rna_seed
+SMARCC1.RNA	8.273973	rna_tpm	SMARCC1	36.36	rna_seed
+SMARCC2.RNA	9.424658	rna_tpm	SMARCC2	69.36	rna_seed
+SMARCE1.RNA	7.986301	rna_tpm	SMARCE1	32.83	rna_seed
+SMYD2.RNA	5.315068	rna_tpm	SMYD2	15.12	rna_seed
+SOAT1.RNA	5.931507	rna_tpm	SOAT1	18.46	rna_seed
+SPTLC1.RNA	6.506849	rna_tpm	SPTLC1	20.49	rna_seed
+SQLE.RNA	2.232877	rna_tpm	SQLE	3.5	rna_seed
+SRD5A3.RNA	1.082192	rna_tpm	SRD5A3	1.05	rna_seed
+SREBF2.RNA	8.438356	rna_tpm	SREBF2	40.34	rna_seed
+TECR.RNA	9.342466	rna_tpm	TECR	68.13	rna_seed
+THBS1.RNA	1.90411	rna_tpm	THBS1	2.73	rna_seed
+TM7SF2.RNA	3.917808	rna_tpm	TM7SF2	8.09	rna_seed
+TNFRSF10A.RNA	6.30137	rna_tpm	TNFRSF10A	19.31	rna_seed
+TNFRSF10B.RNA	8.191781	rna_tpm	TNFRSF10B	35.11	rna_seed
+TP53.RNA	7.945205	rna_tpm	TP53	32.13	rna_seed
+TRIM28.RNA	9.917808	rna_tpm	TRIM28	123.3	rna_seed
+TSC2.RNA	9.054795	rna_tpm	TSC2	56.61	rna_seed
+TXNRD2.RNA	4.69863	rna_tpm	TXNRD2	12.35	rna_seed
+UGDH.RNA	4.246575	rna_tpm	UGDH	9.55	rna_seed
+ZBTB17.RNA	6.136986	rna_tpm	ZBTB17	18.96	rna_seed
+ZMAT3.RNA	3.383562	rna_tpm	ZMAT3	6.67	rna_seed
+ZMIZ1.RNA	4.0	rna_tpm	ZMIZ1	8.33	rna_seed
+SID7226	25.0	metabolite_seed			PIP2
+SID8148096	20.0	metabolite_seed			ATP
+SID8145663	15.0	metabolite_seed			NADPH
+SID8145742	12.0	metabolite_seed			NADH
+SID3305	15.0	metabolite_seed			NAD
+SID3308	15.0	metabolite_seed			NADP
+SID3303	40.0	metabolite_seed			H2O
+SID8144688	8.0	metabolite_seed			dCTP
+SID8143535	8.0	metabolite_seed			dGTP
+SID85646635	4.0	metabolite_seed			ADP
+CAS13095-61-9	10.0	metabolite_seed			met_source_indeg0_default10
+CHEBI13018	10.0	metabolite_seed			met_source_indeg0_default10
+CHEBI134179	10.0	metabolite_seed			met_source_indeg0_default10
+CHEBI1708	10.0	metabolite_seed			met_source_indeg0_default10
+CHEBI19888	10.0	metabolite_seed			met_source_indeg0_default10
+CHEBI23240	10.0	metabolite_seed			met_source_indeg0_default10
+CHEBI25340	10.0	metabolite_seed			met_source_indeg0_default10
+CHEBI26764	10.0	metabolite_seed			met_source_indeg0_default10
+CHEBI26907	10.0	metabolite_seed			met_source_indeg0_default10
+CHEBI3342	10.0	metabolite_seed			met_source_indeg0_default10
+CHEBI38314	10.0	metabolite_seed			met_source_indeg0_default10
+CHEBI48356	10.0	metabolite_seed			met_source_indeg0_default10
+CHEBI50905	10.0	metabolite_seed			met_source_indeg0_default10
+CHEBI50910	10.0	metabolite_seed			met_source_indeg0_default10
+CHEBI51569	10.0	metabolite_seed			met_source_indeg0_default10
+CHEBI76971	10.0	metabolite_seed			met_source_indeg0_default10
+SID104222209	10.0	metabolite_seed			met_source_indeg0_default10
+SID135610833	10.0	metabolite_seed			met_source_indeg0_default10
+SID17487247;TSC2.protein	10.0	metabolite_seed			met_source_indeg0_default10
+SID223438877	10.0	metabolite_seed			met_source_indeg0_default10
+SID315671661	10.0	metabolite_seed			met_source_indeg0_default10
+SID315674253	10.0	metabolite_seed			met_source_indeg0_default10
+SID315723712	10.0	metabolite_seed			met_source_indeg0_default10
+SID315765911	10.0	metabolite_seed			met_source_indeg0_default10
+SID4419	10.0	metabolite_seed			met_source_indeg0_default10
+SID8143410	10.0	metabolite_seed			met_source_indeg0_default10
+SID8144064	10.0	metabolite_seed			met_source_indeg0_default10
+SID8145820	10.0	metabolite_seed			met_source_indeg0_default10
+SID8147929	10.0	metabolite_seed			met_source_indeg0_default10
+SID85337067	10.0	metabolite_seed			met_source_indeg0_default10

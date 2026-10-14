@@ -1,0 +1,313 @@
+{
+  "spn_pipeline_version": "spn_v5_degrade_anc_source",
+  "layer_rules": "off",
+  "stoich": "off",
+  "petri_net": {
+    "n_places": 1497,
+    "n_transitions": 3791,
+    "n_arcs": 11603,
+    "place_kind_counts": {
+      "Metabolite": 239,
+      "histone_mark": 512,
+      "RNA": 326,
+      "Protein": 338,
+      "Promoter": 81,
+      "Protein_complex": 1
+    },
+    "transition_kind_counts": {
+      "Translation": 328,
+      "GIN_virtual": 2195,
+      "Catalysis": 280,
+      "Transcription": 326,
+      "Degradation": 662
+    },
+    "n_synthetic_transitions": 0,
+    "n_marked_places": 258
+  },
+  "graphml": "/disk1/usrData/chixData/multiOmicsIntegration/gin_out/p53_fig4_gin11a_noprune_cd/spn.graphml",
+  "maintain_seeds": true,
+  "maintain_metabolite_sources": true,
+  "n_maintain_met_sources": 0,
+  "maintain_met_sources": [],
+  "mark_mode": "place_levels(ancestor_all)",
+  "add_degradation": true,
+  "keep_trajectories": true,
+  "n_inhibitory_arc_weights": 338,
+  "degradation": {
+    "n_rna_degradation": 317,
+    "n_mirna_degradation": 9,
+    "n_protein_degradation": 334,
+    "n_protein_skipped_ups": 4,
+    "n_histone_degradation": 0,
+    "n_promoter_active_degradation": 0,
+    "n_metabolite_degradation": 0,
+    "n_extra_degradation": 2,
+    "rna_half_life_blocks": 5.0,
+    "mirna_half_life_blocks": 5.0,
+    "protein_half_life_blocks": 20.0,
+    "histone_half_life_blocks": null,
+    "promoter_active_half_life_blocks": null,
+    "metabolite_half_life_blocks": null,
+    "extra_places": {
+      "SID315674483": 5.0,
+      "SID315675471": 5.0
+    },
+    "sink_places": [],
+    "skipped_protein_places": [
+      "CDKN1A.protein",
+      "CTNNB1.protein",
+      "TP53.protein",
+      "TP73.protein"
+    ]
+  },
+  "histone_promoter_signs": {
+    "n_hist_to_promoter_state": 512,
+    "n_inhibitory": 245,
+    "n_activating": 267,
+    "n_zero_or_other": 0,
+    "by_mark_class": {
+      "acetyl_active_like": {
+        "activating": 85
+      },
+      "active_like": {
+        "activating": 182
+      },
+      "repressive_like": {
+        "inhibitory": 245
+      }
+    },
+    "n_paths_to_promoter_active": 512,
+    "n_inhibitory_paths_to_active": 245,
+    "sample_inhibitory": [
+      {
+        "source": "ADGRB1.promoter.H3K27me2",
+        "target": "ADGRB1.promoter;state",
+        "weight": -0.1
+      },
+      {
+        "source": "ADGRB1.promoter.H3K27me3",
+        "target": "ADGRB1.promoter;state",
+        "weight": -0.1
+      },
+      {
+        "source": "ADGRB1.promoter.H3K9me2",
+        "target": "ADGRB1.promoter;state",
+        "weight": -0.1
+      },
+      {
+        "source": "ADGRB1.promoter.H3K9me3",
+        "target": "ADGRB1.promoter;state",
+        "weight": -0.1
+      },
+      {
+        "source": "AIFM2.promoter.H3K27me2",
+        "target": "AIFM2.promoter;state",
+        "weight": -0.1
+      },
+      {
+        "source": "AIFM2.promoter.H3K27me3",
+        "target": "AIFM2.promoter;state",
+        "weight": -0.1
+      },
+      {
+        "source": "AIFM2.promoter.H3K9me2",
+        "target": "AIFM2.promoter;state",
+        "weight": -0.1
+      },
+      {
+        "source": "AIFM2.promoter.H3K9me3",
+        "target": "AIFM2.promoter;state",
+        "weight": -0.1
+      },
+      {
+        "source": "APAF1.promoter.H3K27me2",
+        "target": "APAF1.promoter;state",
+        "weight": -0.1
+      },
+      {
+        "source": "APAF1.promoter.H3K9me2",
+        "target": "APAF1.promoter;state",
+        "weight": -0.1
+      },
+      {
+        "source": "APAF1.promoter.H3K9me3",
+        "target": "APAF1.promoter;state",
+        "weight": -0.1
+      },
+      {
+        "source": "ATM.promoter.H3K27me2",
+        "target": "ATM.promoter;state",
+        "weight": -0.1
+      }
+    ],
+    "sample_activating": [
+      {
+        "source": "ADGRB1.promoter.H3K27ac",
+        "target": "ADGRB1.promoter;state",
+        "weight": 0.1
+      },
+      {
+        "source": "ADGRB1.promoter.H3K4me1",
+        "target": "ADGRB1.promoter;state",
+        "weight": 0.1
+      },
+      {
+        "source": "ADGRB1.promoter.H3K4me2",
+        "target": "ADGRB1.promoter;state",
+        "weight": 0.1
+      },
+      {
+        "source": "ADGRB1.promoter.H3K4me3",
+        "target": "ADGRB1.promoter;state",
+        "weight": 0.1
+      },
+      {
+        "source": "AIFM2.promoter.H3K27ac",
+        "target": "AIFM2.promoter;state",
+        "weight": 0.1
+      },
+      {
+        "source": "AIFM2.promoter.H3K4me1",
+        "target": "AIFM2.promoter;state",
+        "weight": 0.1
+      },
+      {
+        "source": "AIFM2.promoter.H3K4me2",
+        "target": "AIFM2.promoter;state",
+        "weight": 0.1
+      },
+      {
+        "source": "AIFM2.promoter.H3K4me3",
+        "target": "AIFM2.promoter;state",
+        "weight": 0.1
+      },
+      {
+        "source": "APAF1.promoter.H3K27ac",
+        "target": "APAF1.promoter;state",
+        "weight": 0.1
+      },
+      {
+        "source": "APAF1.promoter.H3K4me1",
+        "target": "APAF1.promoter;state",
+        "weight": 0.1
+      },
+      {
+        "source": "APAF1.promoter.H3K4me2",
+        "target": "APAF1.promoter;state",
+        "weight": 0.1
+      },
+      {
+        "source": "APAF1.promoter.H3K4me3",
+        "target": "APAF1.promoter;state",
+        "weight": 0.1
+      }
+    ],
+    "note": "GIN stores histone → GENE.promoter;state (signed), then promoter;state → promoter.active (+1). SPN maps w_in*w_out<0 to inhibition."
+  },
+  "signed_edge_spn": {
+    "n_neg_gin_edges": 338,
+    "n_neg_arcs_in_petri": 338,
+    "n_neg_dropped": 0,
+    "n_spn_inhibition": 1001,
+    "n_spn_activation": 8966,
+    "n_expected_rvr_inhibition": 339,
+    "n_got_rvr_inhibition": 339,
+    "n_both_negative_rvr": 32,
+    "inhibition_by_source_kind": {
+      "protein": 366,
+      "rna": 337,
+      "histone": 245,
+      "other": 13,
+      "metabolite": 40
+    },
+    "sample_both_neg": [
+      {
+        "source": "ATM.protein",
+        "via": "ATM.protein;COP1.protein",
+        "target": "COP1.protein",
+        "w_in": -1.0,
+        "w_out": -1.0
+      },
+      {
+        "source": "ATR.protein",
+        "via": "ATR.protein;MDM2.protein",
+        "target": "MDM2.protein",
+        "w_in": -1.0,
+        "w_out": -1.0
+      },
+      {
+        "source": "ATR.protein",
+        "via": "ATR.protein;PLK1.protein",
+        "target": "PLK1.protein",
+        "w_in": -1.0,
+        "w_out": -1.0
+      },
+      {
+        "source": "ATR.protein",
+        "via": "ATR.protein;SIAH1.protein",
+        "target": "SIAH1.protein",
+        "w_in": -1.0,
+        "w_out": -1.0
+      },
+      {
+        "source": "CDK2.protein",
+        "via": "CDK2.protein;CDKN1A.protein",
+        "target": "CDKN1A.protein",
+        "w_in": -1.0,
+        "w_out": -1.0
+      },
+      {
+        "source": "CDK6.protein",
+        "via": "CDK6.protein;CDKN1A.protein",
+        "target": "CDKN1A.protein",
+        "w_in": -1.0,
+        "w_out": -1.0
+      },
+      {
+        "source": "CDKN1A.protein",
+        "via": "CDKN1A.protein;CCNB1.protein",
+        "target": "CCNB1.protein",
+        "w_in": -1.0,
+        "w_out": -1.0
+      },
+      {
+        "source": "CDKN1A.protein",
+        "via": "CDKN1A.protein;CCND3.protein",
+        "target": "CCND3.protein",
+        "w_in": -1.0,
+        "w_out": -1.0
+      },
+      {
+        "source": "CDKN1A.protein",
+        "via": "CDKN1A.protein;CCNE2.protein;CDK2.protein",
+        "target": "CCNE2.protein",
+        "w_in": -1.0,
+        "w_out": -1.0
+      },
+      {
+        "source": "CDKN1A.protein",
+        "via": "CDKN1A.protein;CCNE2.protein;CDK2.protein",
+        "target": "CDK2.protein",
+        "w_in": -1.0,
+        "w_out": -1.0
+      },
+      {
+        "source": "CDKN1A.protein",
+        "via": "CDKN1A.protein;CDK1.protein",
+        "target": "CDK1.protein",
+        "w_in": -1.0,
+        "w_out": -1.0
+      },
+      {
+        "source": "CDKN1A.protein",
+        "via": "CDKN1A.protein;CDK1.protein;CCNB1.protein",
+        "target": "CCNB1.protein",
+        "w_in": -1.0,
+        "w_out": -1.0
+      }
+    ],
+    "sample_missed": [],
+    "ok": true,
+    "note": "SPN inhibition if w_in<0 or w_out<0 on R→V→R (covers histone XOR signs and protein both-negative inhibition encoding)."
+  }
+}

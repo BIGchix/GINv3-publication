@@ -1,0 +1,715 @@
+{
+  "gin_version": "GINv3.11a.sifi",
+  "input_count": 85,
+  "mapped_count": 231,
+  "mapping_rate": 2.7176470588235295,
+  "unmapped_ids": [],
+  "unmapped_truncated": 0,
+  "unmapped_detail": [],
+  "unmapped_detail_truncated": 0,
+  "ambiguous_mappings": [],
+  "layer_counts": {
+    "other": 22,
+    "rna": 73,
+    "promoter_chromatin": 73,
+    "protein": 63
+  },
+  "warnings": [
+    "seed mapping=central_dogma_multi_layer (gene→promoter.active+RNA+protein when present; no prefer)"
+  ],
+  "strategy": "central_dogma_multi_layer",
+  "central_dogma": {
+    "n_input": 85,
+    "n_with_rna": 73,
+    "n_with_protein": 74,
+    "n_with_promoter": 73,
+    "n_triplet_complete": 73,
+    "n_unmapped": 0,
+    "unmapped_symbols": [],
+    "n_metabolite": 11,
+    "n_gene": 74
+  },
+  "n_walk_anchors": 231,
+  "seed_records": [
+    {
+      "symbol": "ADGRB1",
+      "kind": "gene",
+      "rna_node": "ADGRB1.RNA",
+      "protein_node": "ADGRB1",
+      "promoter_node": "ADGRB1.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "AIFM2",
+      "kind": "gene",
+      "rna_node": "AIFM2.RNA",
+      "protein_node": "AIFM2.protein",
+      "promoter_node": "AIFM2.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "APAF1",
+      "kind": "gene",
+      "rna_node": "APAF1.RNA",
+      "protein_node": "APAF1.protein",
+      "promoter_node": "APAF1.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "ATM",
+      "kind": "gene",
+      "rna_node": "ATM.RNA",
+      "protein_node": "ATM.protein",
+      "promoter_node": "ATM.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "ATR",
+      "kind": "gene",
+      "rna_node": "ATR.RNA",
+      "protein_node": "ATR.protein",
+      "promoter_node": "ATR.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "BAX",
+      "kind": "gene",
+      "rna_node": "BAX.RNA",
+      "protein_node": "BAX.protein",
+      "promoter_node": "BAX.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "BBC3",
+      "kind": "gene",
+      "rna_node": "BBC3.RNA",
+      "protein_node": "BBC3.protein",
+      "promoter_node": "BBC3.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "BCL2",
+      "kind": "gene",
+      "rna_node": "BCL2.RNA",
+      "protein_node": "BCL2.protein",
+      "promoter_node": "BCL2.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "BCL2L1",
+      "kind": "gene",
+      "rna_node": "BCL2L1.RNA",
+      "protein_node": "BCL2L1.protein",
+      "promoter_node": "BCL2L1.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "BID",
+      "kind": "gene",
+      "rna_node": "BID.RNA",
+      "protein_node": "BID.protein",
+      "promoter_node": "BID.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CASP3",
+      "kind": "gene",
+      "rna_node": "CASP3.RNA",
+      "protein_node": "CASP3.protein",
+      "promoter_node": "CASP3.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CASP8",
+      "kind": "gene",
+      "rna_node": "CASP8.RNA",
+      "protein_node": "CASP8.protein",
+      "promoter_node": "CASP8.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CASP9",
+      "kind": "gene",
+      "rna_node": "CASP9.RNA",
+      "protein_node": "CASP9.protein",
+      "promoter_node": "CASP9.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CCNB1",
+      "kind": "gene",
+      "rna_node": "CCNB1.RNA",
+      "protein_node": "CCNB1.protein",
+      "promoter_node": "CCNB1.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CCNB2",
+      "kind": "gene",
+      "rna_node": "CCNB2.RNA",
+      "protein_node": "CCNB2",
+      "promoter_node": "CCNB2.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CCND1",
+      "kind": "gene",
+      "rna_node": "CCND1.RNA",
+      "protein_node": "CCND1.protein",
+      "promoter_node": "CCND1.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CCND2",
+      "kind": "gene",
+      "rna_node": "CCND2.RNA",
+      "protein_node": "CCND2.protein",
+      "promoter_node": "CCND2.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CCND3",
+      "kind": "gene",
+      "rna_node": "CCND3.RNA",
+      "protein_node": "CCND3.protein",
+      "promoter_node": "CCND3.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CCNE1",
+      "kind": "gene",
+      "rna_node": "CCNE1.RNA",
+      "protein_node": "CCNE1.protein",
+      "promoter_node": "CCNE1.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CCNE2",
+      "kind": "gene",
+      "rna_node": "CCNE2.RNA",
+      "protein_node": "CCNE2.protein",
+      "promoter_node": "CCNE2.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CCNG1",
+      "kind": "gene",
+      "rna_node": "CCNG1.RNA",
+      "protein_node": "CCNG1.protein",
+      "promoter_node": "CCNG1.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CCNG2",
+      "kind": "gene",
+      "rna_node": "CCNG2.RNA",
+      "protein_node": "CCNG2",
+      "promoter_node": "CCNG2.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CD82",
+      "kind": "gene",
+      "rna_node": "CD82.RNA",
+      "protein_node": "CD82.protein",
+      "promoter_node": "CD82.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CDK1",
+      "kind": "gene",
+      "rna_node": "CDK1.RNA",
+      "protein_node": "CDK1.protein",
+      "promoter_node": "CDK1.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CDK2",
+      "kind": "gene",
+      "rna_node": "CDK2.RNA",
+      "protein_node": "CDK2.protein",
+      "promoter_node": "CDK2.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CDK4",
+      "kind": "gene",
+      "rna_node": "CDK4.RNA",
+      "protein_node": "CDK4.protein",
+      "promoter_node": "CDK4.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CDK6",
+      "kind": "gene",
+      "rna_node": "CDK6.RNA",
+      "protein_node": "CDK6.protein",
+      "promoter_node": "CDK6.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CDKN1A",
+      "kind": "gene",
+      "rna_node": "CDKN1A.RNA",
+      "protein_node": "CDKN1A.protein",
+      "promoter_node": "CDKN1A.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CDKN2A",
+      "kind": "gene",
+      "rna_node": "CDKN2A.RNA",
+      "protein_node": "CDKN2A.protein",
+      "promoter_node": "CDKN2A.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CHEK1",
+      "kind": "gene",
+      "rna_node": "CHEK1.RNA",
+      "protein_node": "CHEK1.protein",
+      "promoter_node": "CHEK1.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CHEK2",
+      "kind": "gene",
+      "rna_node": "CHEK2.RNA",
+      "protein_node": "CHEK2.protein",
+      "promoter_node": "CHEK2.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "COP1",
+      "kind": "gene",
+      "rna_node": "COP1.RNA",
+      "protein_node": "COP1.protein",
+      "promoter_node": "COP1.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "CYCS",
+      "kind": "gene",
+      "rna_node": "CYCS.RNA",
+      "protein_node": "CYCS.protein",
+      "promoter_node": "CYCS.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "DDB2",
+      "kind": "gene",
+      "rna_node": "DDB2.RNA",
+      "protein_node": "DDB2.protein",
+      "promoter_node": "DDB2.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "EI24",
+      "kind": "gene",
+      "rna_node": "EI24.RNA",
+      "protein_node": "EI24",
+      "promoter_node": "EI24.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "FAS",
+      "kind": "gene",
+      "rna_node": "FAS.RNA",
+      "protein_node": "FAS.protein",
+      "promoter_node": "FAS.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "GADD45A",
+      "kind": "gene",
+      "rna_node": "GADD45A.RNA",
+      "protein_node": "GADD45A.protein",
+      "promoter_node": "GADD45A.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "GADD45B",
+      "kind": "gene",
+      "rna_node": "GADD45B.RNA",
+      "protein_node": "GADD45B.protein",
+      "promoter_node": "GADD45B.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "GADD45G",
+      "kind": "gene",
+      "rna_node": "GADD45G.RNA",
+      "protein_node": "GADD45G.protein",
+      "promoter_node": "GADD45G.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "GORAB",
+      "kind": "gene",
+      "rna_node": "GORAB.RNA",
+      "protein_node": "GORAB",
+      "promoter_node": "GORAB.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "GTSE1",
+      "kind": "gene",
+      "rna_node": "GTSE1.RNA",
+      "protein_node": "GTSE1.protein",
+      "promoter_node": "GTSE1.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "IGF1",
+      "kind": "gene",
+      "rna_node": "IGF1.RNA",
+      "protein_node": "IGF1.protein",
+      "promoter_node": "IGF1.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "IGFBP3",
+      "kind": "gene",
+      "rna_node": "IGFBP3.RNA",
+      "protein_node": "IGFBP3.protein",
+      "promoter_node": "IGFBP3.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "MDM2",
+      "kind": "gene",
+      "rna_node": "MDM2.RNA",
+      "protein_node": "MDM2.protein",
+      "promoter_node": "MDM2.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "MDM4",
+      "kind": "gene",
+      "rna_node": "MDM4.RNA",
+      "protein_node": "MDM4.protein",
+      "promoter_node": "MDM4.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "PERP",
+      "kind": "gene",
+      "rna_node": "PERP.RNA",
+      "protein_node": "PERP.protein",
+      "promoter_node": "PERP.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "PIDD1",
+      "kind": "gene",
+      "rna_node": "PIDD1.RNA",
+      "protein_node": "PIDD1.protein",
+      "promoter_node": "PIDD1.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "PMAIP1",
+      "kind": "gene",
+      "rna_node": "PMAIP1.RNA",
+      "protein_node": "PMAIP1.protein",
+      "promoter_node": "PMAIP1.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "PPM1D",
+      "kind": "gene",
+      "rna_node": "PPM1D.RNA",
+      "protein_node": "PPM1D.protein",
+      "promoter_node": "PPM1D.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "PTEN",
+      "kind": "gene",
+      "rna_node": "PTEN.RNA",
+      "protein_node": "PTEN.protein",
+      "promoter_node": "PTEN.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "RCHY1",
+      "kind": "gene",
+      "rna_node": "RCHY1.RNA",
+      "protein_node": "RCHY1.protein",
+      "promoter_node": "RCHY1.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "RPRM",
+      "kind": "gene",
+      "rna_node": "RPRM.RNA",
+      "protein_node": "RPRM",
+      "promoter_node": "RPRM.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "RRM2",
+      "kind": "gene",
+      "rna_node": "RRM2.RNA",
+      "protein_node": "RRM2.protein",
+      "promoter_node": "RRM2.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "RRM2B",
+      "kind": "gene",
+      "rna_node": "RRM2B.RNA",
+      "protein_node": "RRM2B.protein",
+      "promoter_node": "RRM2B.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "SERPINB5",
+      "kind": "gene",
+      "rna_node": "SERPINB5.RNA",
+      "protein_node": "SERPINB5.protein",
+      "promoter_node": "SERPINB5.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "SERPINE1",
+      "kind": "gene",
+      "rna_node": "SERPINE1.RNA",
+      "protein_node": "SERPINE1.protein",
+      "promoter_node": "SERPINE1.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "SESN1",
+      "kind": "gene",
+      "rna_node": "SESN1.RNA",
+      "protein_node": "SESN1.protein",
+      "promoter_node": "SESN1.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "SESN2",
+      "kind": "gene",
+      "rna_node": "SESN2.RNA",
+      "protein_node": "SESN2",
+      "promoter_node": "SESN2.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "SESN3",
+      "kind": "gene",
+      "rna_node": "SESN3.RNA",
+      "protein_node": "SESN3",
+      "promoter_node": "SESN3.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "SFN",
+      "kind": "gene",
+      "rna_node": "SFN.RNA",
+      "protein_node": "SFN.protein",
+      "promoter_node": "SFN.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "SHISA5",
+      "kind": "gene",
+      "rna_node": "SHISA5.RNA",
+      "protein_node": "SHISA5",
+      "promoter_node": "SHISA5.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "SIAH1",
+      "kind": "gene",
+      "rna_node": "SIAH1.RNA",
+      "protein_node": "SIAH1.protein",
+      "promoter_node": "SIAH1.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "SIVA1",
+      "kind": "gene",
+      "rna_node": "SIVA1.RNA",
+      "protein_node": "SIVA1.protein",
+      "promoter_node": "SIVA1.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "STEAP3",
+      "kind": "gene",
+      "rna_node": "STEAP3.RNA",
+      "protein_node": "STEAP3.protein",
+      "promoter_node": "STEAP3.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "THBS1",
+      "kind": "gene",
+      "rna_node": "THBS1.RNA",
+      "protein_node": "THBS1.protein",
+      "promoter_node": "THBS1.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "TNFRSF10A",
+      "kind": "gene",
+      "rna_node": "TNFRSF10A.RNA",
+      "protein_node": "TNFRSF10A.protein",
+      "promoter_node": "TNFRSF10A.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "TNFRSF10B",
+      "kind": "gene",
+      "rna_node": "TNFRSF10B.RNA",
+      "protein_node": "TNFRSF10B.protein",
+      "promoter_node": "TNFRSF10B.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "TP53",
+      "kind": "gene",
+      "rna_node": "TP53.RNA",
+      "protein_node": "TP53.protein",
+      "promoter_node": "TP53.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "TP53AIP1",
+      "kind": "gene",
+      "rna_node": "TP53AIP1.RNA",
+      "protein_node": "TP53AIP1.protein",
+      "promoter_node": "TP53AIP1.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "TP53I3",
+      "kind": "gene",
+      "rna_node": "TP53I3.RNA",
+      "protein_node": "TP53I3.protein",
+      "promoter_node": "TP53I3.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "TP73",
+      "kind": "gene",
+      "rna_node": "TP73.RNA",
+      "protein_node": "TP73.protein",
+      "promoter_node": "TP73.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "TSC2",
+      "kind": "gene",
+      "rna_node": "TSC2.RNA",
+      "protein_node": "TSC2.protein",
+      "promoter_node": "TSC2.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "ZMAT3",
+      "kind": "gene",
+      "rna_node": "ZMAT3.RNA",
+      "protein_node": "ZMAT3",
+      "promoter_node": "ZMAT3.promoter.active",
+      "metabolite_node": null
+    },
+    {
+      "symbol": "SID7226",
+      "kind": "metabolite",
+      "rna_node": null,
+      "protein_node": null,
+      "promoter_node": null,
+      "metabolite_node": "SID7226"
+    },
+    {
+      "symbol": "SID4419",
+      "kind": "metabolite",
+      "rna_node": null,
+      "protein_node": null,
+      "promoter_node": null,
+      "metabolite_node": "SID4419"
+    },
+    {
+      "symbol": "SID3706",
+      "kind": "metabolite",
+      "rna_node": null,
+      "protein_node": null,
+      "promoter_node": null,
+      "metabolite_node": "SID3706"
+    },
+    {
+      "symbol": "SID8144912",
+      "kind": "metabolite",
+      "rna_node": null,
+      "protein_node": null,
+      "promoter_node": null,
+      "metabolite_node": "SID8144912"
+    },
+    {
+      "symbol": "SID5893",
+      "kind": "metabolite",
+      "rna_node": null,
+      "protein_node": null,
+      "promoter_node": null,
+      "metabolite_node": "SID5893"
+    },
+    {
+      "symbol": "SID8145742",
+      "kind": "metabolite",
+      "rna_node": null,
+      "protein_node": null,
+      "promoter_node": null,
+      "metabolite_node": "SID8145742"
+    },
+    {
+      "symbol": "SID3308",
+      "kind": "metabolite",
+      "rna_node": null,
+      "protein_node": null,
+      "promoter_node": null,
+      "metabolite_node": "SID3308"
+    },
+    {
+      "symbol": "SID8145663",
+      "kind": "metabolite",
+      "rna_node": null,
+      "protein_node": null,
+      "promoter_node": null,
+      "metabolite_node": "SID8145663"
+    },
+    {
+      "symbol": "CID5793",
+      "kind": "gene",
+      "rna_node": null,
+      "protein_node": "CID5793",
+      "promoter_node": null,
+      "metabolite_node": null
+    },
+    {
+      "symbol": "SID8143535",
+      "kind": "metabolite",
+      "rna_node": null,
+      "protein_node": null,
+      "promoter_node": null,
+      "metabolite_node": "SID8143535"
+    },
+    {
+      "symbol": "SID8144688",
+      "kind": "metabolite",
+      "rna_node": null,
+      "protein_node": null,
+      "promoter_node": null,
+      "metabolite_node": "SID8144688"
+    },
+    {
+      "symbol": "SID8144064",
+      "kind": "metabolite",
+      "rna_node": null,
+      "protein_node": null,
+      "promoter_node": null,
+      "metabolite_node": "SID8144064"
+    }
+  ]
+}

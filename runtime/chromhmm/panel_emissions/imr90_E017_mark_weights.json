@@ -1,0 +1,24 @@
+{
+  "formula": "w_j = mean_A e_ij - mean_I e_ij",
+  "source_path": "runtime/chromhmm/panel_emissions/imr90_E017_promoter_emission.tsv",
+  "n_marks": 6,
+  "weights": {
+    "H3K27AC": 0.5778202802448614,
+    "H3K27ME3": -0.8270239949067898,
+    "H3K36ME3": -0.0030056239483368836,
+    "H3K4ME1": -0.0877415034929192,
+    "H3K4ME3": 0.06790926332412894,
+    "H3K9ME3": -0.06568956820873788
+  },
+  "n_promoter_states": 3,
+  "n_active_states": 2,
+  "n_inactive_states": 1,
+  "active_state_ids": [
+    "8->TssA",
+    "11->TssAFlnk"
+  ],
+  "inactive_state_ids": [
+    "7->BivFlnk"
+  ],
+  "skipped_non_promoter": 0
+}

@@ -1,0 +1,64 @@
+{
+  "figure": "fig3_panel_E_style",
+  "definition": {
+    "real_hop": "R→V→R on bipartite GIN",
+    "graph_hop": "directed BFS depth (--context-mech-depth); graph-hop=2 ≡ real-hop=1",
+    "excludes": [
+      "GRN allowlist prune",
+      "chromHMM emission weights"
+    ],
+    "includes_v4_topology": [
+      "dogma chain repair",
+      "HME soft-seed + histprune",
+      "drop non-seed promoter.active/;state",
+      "LCC bridge",
+      "met-enzyme recovery"
+    ]
+  },
+  "rows": [
+    {
+      "root": "gin_out/p53_fig3e_v4_gin11a_realhop1_gh2",
+      "label": "p53_fig3e_v4_gin11a_realhop1_gh2",
+      "real_hop": 1,
+      "graph_hop": 2,
+      "context_pipeline_version": "context_v4_hme_soft_metenz3a_dogma_hme_seedhist_dropnsact_histprune",
+      "subgraph_mode": "context",
+      "n_total_nodes": 4626,
+      "n_real_nodes": 1497,
+      "n_virtual_nodes": 3129,
+      "n_edges": 11368,
+      "notes": "Shared pathway context only: no cell-specific GRN allowlist prune; no chromHMM (simulation-time). Virtual = node name contains ';'."
+    },
+    {
+      "root": "gin_out/p53_fig3e_v4_gin11a_realhop2_gh4",
+      "label": "p53_fig3e_v4_gin11a_realhop2_gh4",
+      "real_hop": 2,
+      "graph_hop": 4,
+      "context_pipeline_version": "context_v4_hme_soft_metenz3a_dogma_hme_seedhist_dropnsact_histprune",
+      "subgraph_mode": "context",
+      "n_total_nodes": 17015,
+      "n_real_nodes": 5097,
+      "n_virtual_nodes": 11918,
+      "n_edges": 50324,
+      "notes": "Shared pathway context only: no cell-specific GRN allowlist prune; no chromHMM (simulation-time). Virtual = node name contains ';'."
+    },
+    {
+      "root": "gin_out/p53_fig3e_v4_gin11a_realhop3_gh6",
+      "label": "p53_fig3e_v4_gin11a_realhop3_gh6",
+      "real_hop": 3,
+      "graph_hop": 6,
+      "context_pipeline_version": "context_v4_hme_soft_metenz3a_dogma_hme_seedhist_dropnsact_histprune",
+      "subgraph_mode": "context",
+      "n_total_nodes": 24415,
+      "n_real_nodes": 7461,
+      "n_virtual_nodes": 16954,
+      "n_edges": 83243,
+      "notes": "Shared pathway context only: no cell-specific GRN allowlist prune; no chromHMM (simulation-time). Virtual = node name contains ';'."
+    }
+  ],
+  "sifi": "GINv3.11a.sifi",
+  "pythonhashseed": "0",
+  "context_n_jobs": 20,
+  "publication_version_id": "p53_pub_gin11a_hs0_20260929",
+  "seeds": "p53_pi3k_curated + active_tfs_rwrC_emp05.txt"
+}

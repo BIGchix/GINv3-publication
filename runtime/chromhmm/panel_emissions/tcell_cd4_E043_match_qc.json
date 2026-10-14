@@ -1,0 +1,126 @@
+[
+  {
+    "indiv_state": "1",
+    "matched_joint15": "8_ZNF/Rpts",
+    "distance": 0.6016502685788322,
+    "tss_enrichment": 4.4268,
+    "kept": false,
+    "reason": "non_promoter:other"
+  },
+  {
+    "indiv_state": "2",
+    "matched_joint15": "9_Het",
+    "distance": 0.011832279958628697,
+    "tss_enrichment": 0.34263,
+    "kept": false,
+    "reason": "non_promoter:heterochromatin"
+  },
+  {
+    "indiv_state": "3",
+    "matched_joint15": "15_Quies",
+    "distance": 0.003745943126955748,
+    "tss_enrichment": 0.30046,
+    "kept": false,
+    "reason": "non_promoter:other"
+  },
+  {
+    "indiv_state": "4",
+    "matched_joint15": "8_ZNF/Rpts",
+    "distance": 0.2566877438906181,
+    "tss_enrichment": 0.89304,
+    "kept": false,
+    "reason": "non_promoter:other"
+  },
+  {
+    "indiv_state": "5",
+    "matched_joint15": "4_Tx",
+    "distance": 0.15990142883755942,
+    "tss_enrichment": 1.92613,
+    "kept": false,
+    "reason": "non_promoter:genebody"
+  },
+  {
+    "indiv_state": "6",
+    "matched_joint15": "5_TxWk",
+    "distance": 0.090185712137892,
+    "tss_enrichment": 0.99205,
+    "kept": false,
+    "reason": "non_promoter:genebody"
+  },
+  {
+    "indiv_state": "7",
+    "matched_joint15": "15_Quies",
+    "distance": 0.005363592020578733,
+    "tss_enrichment": 0.75301,
+    "kept": false,
+    "reason": "non_promoter:other"
+  },
+  {
+    "indiv_state": "8",
+    "matched_joint15": "6_EnhG",
+    "distance": 0.08645218806074167,
+    "tss_enrichment": 2.31199,
+    "kept": false,
+    "reason": "non_promoter:enhancer"
+  },
+  {
+    "indiv_state": "9",
+    "matched_joint15": "7_Enh",
+    "distance": 0.335109747382157,
+    "tss_enrichment": 1.15224,
+    "kept": false,
+    "reason": "non_promoter:enhancer"
+  },
+  {
+    "indiv_state": "10",
+    "matched_joint15": "7_Enh",
+    "distance": 0.16651576972332116,
+    "tss_enrichment": 1.2739,
+    "kept": false,
+    "reason": "non_promoter:enhancer"
+  },
+  {
+    "indiv_state": "11",
+    "matched_joint15": "12_EnhBiv",
+    "distance": 0.4248055636179228,
+    "tss_enrichment": 16.04359,
+    "kept": true,
+    "reason": "enhbiv_high_tss_as_inactive_promoter",
+    "reason_override": "enhbiv_high_tss_as_inactive_promoter",
+    "H3K27ac_joint18": 0.13531364328981643
+  },
+  {
+    "indiv_state": "12",
+    "matched_joint15": "2_TssAFlnk",
+    "distance": 0.058439589880411355,
+    "tss_enrichment": 9.70821,
+    "kept": true,
+    "reason": "promoter_active",
+    "H3K27ac_joint18": 0.3859218673102785
+  },
+  {
+    "indiv_state": "13",
+    "matched_joint15": "1_TssA",
+    "distance": 0.035102578407352286,
+    "tss_enrichment": 82.01004,
+    "kept": true,
+    "reason": "promoter_active",
+    "H3K27ac_joint18": 0.9539056595448477
+  },
+  {
+    "indiv_state": "14",
+    "matched_joint15": "13_ReprPC",
+    "distance": 0.25161977274308384,
+    "tss_enrichment": 2.58524,
+    "kept": false,
+    "reason": "non_promoter:other"
+  },
+  {
+    "indiv_state": "15",
+    "matched_joint15": "15_Quies",
+    "distance": 0.024847739904523578,
+    "tss_enrichment": 0.5754,
+    "kept": false,
+    "reason": "non_promoter:other"
+  }
+]

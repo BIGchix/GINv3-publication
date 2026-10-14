@@ -1,0 +1,8 @@
+# Runtime for GINv3.11a manuscript reproduction
+numpy>=1.24
+scipy>=1.11
+networkx>=3.2
+pandas>=2.0
+matplotlib>=3.8
+seaborn>=0.13
+scikit-learn>=1.3
