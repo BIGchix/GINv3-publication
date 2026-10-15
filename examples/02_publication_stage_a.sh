@@ -7,9 +7,8 @@ cd "$ROOT"
 export PYTHONHASHSEED=0
 N_JOBS="${N_JOBS:-20}"
 
-if [[ ! -f GINv3.11a.sifi ]]; then
-  python scripts/reproduce_publication.py --steps prepare
-fi
+# prepare verifies data/GINv3.11a.sifi.gz (no unpack required)
+python scripts/reproduce_publication.py --steps prepare
 
 echo "[pub Stage A] n_jobs=$N_JOBS HASHSEED=$PYTHONHASHSEED"
 python scripts/reproduce_publication.py --steps stage_a --n-jobs "$N_JOBS"

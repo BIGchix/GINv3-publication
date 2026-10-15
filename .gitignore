@@ -14,6 +14,11 @@ venv/
 
 # Unpacked prior (~787 MB); keep data/GINv3.11a.sifi.gz in git
 /GINv3.11a.sifi
+/GINv3.11a.sifi.bak*
+/data/GINv3.11a.sifi
+
+# Local run logs (Stage A / reproduce probes)
+/logs/
 
 # Regenerated run products (use expected/ + --from-expected for fingerprint checks)
 /gin_out/**

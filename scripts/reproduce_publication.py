@@ -7,7 +7,7 @@ into place as the primary workflow). For custom biology, use
 
 Steps (lock p53_pub_gin11a_hs0_20260929 + fig4cd 20261001):
 
-  prepare   unpack data/GINv3.11a.sifi.gz and check SHA-256
+  prepare   verify data/GINv3.11a.sifi.gz SHA-256 (optional --materialize-sifi)
   stage_a   recompute context v4 · real-hop 1 · no GRN prune
   fig3e     recompute real-hop 1/2/3 series
   fig4cd    recompute six-line noprune SigPN (200×200)
@@ -35,6 +35,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SIFI = ROOT / "GINv3.11a.sifi"
 SIFI_GZ = ROOT / "data" / "GINv3.11a.sifi.gz"
 LOCK_SIFI_SHA = "192b2cb5a8147324fc41064a3f20c943a3d82c03972cff544e3d26219e7ace83"
+LOCK_SIFI_GZ_SHA = "f9bb23c44c30d0dd6eab73225600085b378d1912e59f1ff0d8a3a0b37cfd0a58"
 LOCK_SIFI_BYTES = 824892563
 
 ALL_STEPS = ("prepare", "stage_a", "fig3e", "fig4cd", "prune_h1", "pulse", "assert")
@@ -46,6 +47,15 @@ def sha256_file(path: Path) -> str:
         for chunk in iter(lambda: fh.read(1 << 20), b""):
             h.update(chunk)
     return h.hexdigest()
+
+
+def resolve_sifi() -> Path:
+    """Default to bundled ``.sifi.gz``; plain ``.sifi`` only if gz is absent."""
+    if SIFI_GZ.is_file():
+        return SIFI_GZ
+    if SIFI.is_file():
+        return SIFI
+    raise SystemExit(f"missing GIN prior: {SIFI_GZ} or {SIFI}")
 
 
 def run(cmd: list[str], *, env: dict[str, str] | None = None) -> None:
@@ -71,15 +81,26 @@ def seeds_csv() -> str:
     return out.strip()
 
 
-def step_prepare() -> None:
+def step_prepare(*, materialize: bool = False) -> None:
+    """Verify bundled ``.sifi.gz``; optionally unpack to plain ``./GINv3.11a.sifi``."""
+    if not SIFI_GZ.is_file():
+        raise SystemExit(f"missing {SIFI_GZ}")
+    got_gz = sha256_file(SIFI_GZ)
+    if got_gz != LOCK_SIFI_GZ_SHA:
+        raise SystemExit(f"GINv3.11a.sifi.gz sha mismatch: {got_gz}")
+    print(f"OK {SIFI_GZ} sha256={got_gz}")
+
     if SIFI.is_file() and SIFI.stat().st_size == LOCK_SIFI_BYTES:
         got = sha256_file(SIFI)
         if got != LOCK_SIFI_SHA:
             raise SystemExit(f"GINv3.11a.sifi sha mismatch: {got}")
         print(f"OK existing {SIFI} ({LOCK_SIFI_BYTES} bytes)")
         return
-    if not SIFI_GZ.is_file():
-        raise SystemExit(f"missing {SIFI_GZ}")
+
+    if not materialize:
+        print(f"default prior: {SIFI_GZ}")
+        return
+
     print(f"unpack {SIFI_GZ} → {SIFI}")
     with gzip.open(SIFI_GZ, "rb") as src, SIFI.open("wb") as dst:
         shutil.copyfileobj(src, dst)
@@ -99,7 +120,7 @@ def _context_cmd(out: Path, *, mech_depth: int, n_jobs: int) -> list[str]:
         "-m",
         "gin_tool.cli",
         "--sifi",
-        str(SIFI),
+        str(resolve_sifi()),
         "--seeds",
         seeds_csv(),
         "--out-dir",
@@ -252,7 +273,7 @@ def step_pulse(*, n_jobs: int, runs: int, blocks: int, seed: int) -> None:
 
 def step_assert(*, skip_sifi: bool, topology_only: bool = False) -> None:
     cmd = [sys.executable, "-u", "scripts/assert_p53_pub_gin11a_lock.py"]
-    if skip_sifi or not SIFI.is_file():
+    if skip_sifi or not (SIFI.is_file() or SIFI_GZ.is_file()):
         cmd.append("--skip-sifi")
     run(cmd)
     if topology_only:
@@ -327,6 +348,15 @@ def main(argv: list[str] | None = None) -> int:
             "assert topology. Not a substitute for recomputing Stage A."
         ),
     )
+    ap.add_argument(
+        "--materialize-sifi",
+        action="store_true",
+        help=(
+            "During prepare: also unpack → ./GINv3.11a.sifi (~0.8 GB). "
+            "Pipeline default remains data/GINv3.11a.sifi.gz; pass "
+            "--sifi ./GINv3.11a.sifi on the CLI to use the plain file."
+        ),
+    )
     args = ap.parse_args(argv)
 
     runs, blocks = args.runs, args.blocks
@@ -334,11 +364,18 @@ def main(argv: list[str] | None = None) -> int:
         runs, blocks = 2, 4
         print("SMOKE: runs=2 blocks=4 (not publication-scale)", flush=True)
 
+    materialize = args.materialize_sifi or os.environ.get(
+        "GIN_MATERIALIZE_SIFI", ""
+    ).strip() in ("1", "true", "True", "yes")
+
     if args.from_expected:
         install_expected_fingerprints()
         # Fig. 4C/D full lock needs trajectory dumps (large); not bundled.
         # Topology / H1 / pulse-JSON fingerprint check is enough offline.
-        step_assert(skip_sifi=not SIFI.is_file(), topology_only=True)
+        step_assert(
+            skip_sifi=not (SIFI.is_file() or SIFI_GZ.is_file()),
+            topology_only=True,
+        )
         return 0
 
     wanted = list(ALL_STEPS) if args.steps == "all" else [s.strip() for s in args.steps.split(",") if s.strip()]
@@ -346,11 +383,22 @@ def main(argv: list[str] | None = None) -> int:
     if unknown:
         raise SystemExit(f"unknown steps: {unknown}")
 
-    print(json.dumps({"root": str(ROOT), "steps": wanted, "n_jobs": args.n_jobs}, indent=2))
+    print(
+        json.dumps(
+            {
+                "root": str(ROOT),
+                "steps": wanted,
+                "n_jobs": args.n_jobs,
+                "sifi": str(resolve_sifi()) if (SIFI.is_file() or SIFI_GZ.is_file()) else None,
+                "materialize_sifi": materialize,
+            },
+            indent=2,
+        )
+    )
     for step in wanted:
         print(f"\n===== {step} =====", flush=True)
         if step == "prepare":
-            step_prepare()
+            step_prepare(materialize=materialize)
         elif step == "stage_a":
             step_stage_a(n_jobs=args.n_jobs)
         elif step == "fig3e":
@@ -362,7 +410,10 @@ def main(argv: list[str] | None = None) -> int:
         elif step == "pulse":
             step_pulse(n_jobs=args.n_jobs, runs=runs, blocks=blocks, seed=args.seed)
         elif step == "assert":
-            step_assert(skip_sifi=not SIFI.is_file(), topology_only=False)
+            step_assert(
+                skip_sifi=not (SIFI.is_file() or SIFI_GZ.is_file()),
+                topology_only=False,
+            )
     return 0
 
 

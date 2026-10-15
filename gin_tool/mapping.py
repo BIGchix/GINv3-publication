@@ -351,9 +351,11 @@ def merge_candidate_fns(
 
 
 def iter_unique_gin_nodes_from_sifi(path: str, encoding: str = "utf-8") -> Iterator[str]:
-    """Stream unique node names from a .sifi file (two columns, tab-separated)."""
+    """Stream unique node names from a .sifi / .sifi.gz (two columns, tab-separated)."""
+    from gin_tool.io import open_sifi_text
+
     seen: set[str] = set()
-    with open(path, "r", encoding=encoding) as f:
+    with open_sifi_text(path, encoding=encoding) as f:
         for line in f:
             parts = line.rstrip("\n").split("\t")
             if len(parts) < 2:

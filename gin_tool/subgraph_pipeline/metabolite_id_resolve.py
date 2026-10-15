@@ -136,10 +136,12 @@ def collect_chem_nodes_from_sifi(sifi_path: str | Path) -> set[str]:
 
     Matches GINv2 UC_ID tokens (``SID3333``, ``CAS50-99-7``, composites
     ``CAS…_…``). Does **not** treat gene symbols like ``CASP3`` as chemicals.
+    Accepts plain ``.sifi`` or ``.sifi.gz``.
     """
-    path = Path(sifi_path)
+    from gin_tool.io import open_sifi_text
+
     out: set[str] = set()
-    with path.open(encoding="utf-8", errors="replace") as fh:
+    with open_sifi_text(sifi_path, encoding="utf-8", errors="replace") as fh:
         for line in fh:
             parts = line.rstrip("\n").split("\t")
             if len(parts) < 2:

@@ -37,7 +37,7 @@ points to it under Code Availability.
 |------|--------|
 | OS | Linux recommended for bit-identical Stage A; macOS works for toolkit use |
 | Python | ≥ 3.9 |
-| Disk | ~1 GB free after preparing `GINv3.11a.sifi` (~0.8 GB prior) |
+| Disk | Bundled prior `data/GINv3.11a.sifi.gz` (~75 MB); optional unpack +~0.8 GB |
 | RAM / CPU | Context with `--context-n-jobs 20` is cluster-scale; small demos run on a laptop |
 
 ---
@@ -51,7 +51,7 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install -U pip && pip install -e ".[sim]"
 export PYTHONHASHSEED=0
 python scripts/reproduce_publication.py --steps prepare
-# → prepares ./GINv3.11a.sifi from data/GINv3.11a.sifi.gz
+# → verifies data/GINv3.11a.sifi.gz (add --materialize-sifi to unpack ~0.8 GB plain)
 ```
 
 After install, the CLI is available as:
@@ -67,11 +67,11 @@ More detail: [docs/USER_GUIDE.md](docs/USER_GUIDE.md).
 
 ## Quick start
 
-**1. Context subgraph** (needs `prepare` / `GINv3.11a.sifi`):
+**1. Context subgraph** (uses `data/GINv3.11a.sifi.gz` directly; no unpack required):
 
 ```bash
 python -m gin_tool.cli \
-  --sifi ./GINv3.11a.sifi \
+  --sifi data/GINv3.11a.sifi.gz \
   --seeds "TP53,MDM2,CDKN1A" \
   --out-dir gin_out/my_context \
   --context-mech-depth 2 \
@@ -100,7 +100,7 @@ See [examples/](examples/) for more scripts.
 ## Workflow
 
 ```text
-seeds + GINv3.11a.sifi
+seeds + GINv3.11a.sifi(.gz)
         │
         ▼
   context subgraph  ──►  (optional) ChIP prune  ──►  SigPN simulation

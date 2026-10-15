@@ -46,7 +46,7 @@ def main(argv: list[str] | None = None) -> int:
         "--sifi",
         type=Path,
         default=DEFAULT_SIFI,
-        help=f"Path to GINv*.sifi (default: {DEFAULT_SIFI.name})",
+        help=f"Path to GINv*.sifi or .sifi.gz (default: {DEFAULT_SIFI.name})",
     )
     p.add_argument(
         "--seeds",

@@ -2,7 +2,7 @@
 
 | Path | Purpose |
 |------|---------|
-| `01_custom_context.sh` | Toolkit: your seeds → context subgraph (needs `GINv3.11a.sifi`) |
+| `01_custom_context.sh` | Toolkit: your seeds → context subgraph (uses `.sifi.gz` or plain) |
 | `02_publication_stage_a.sh` | Publication: **recompute** Stage A, print sha vs lock |
 | `03_sigpn_demo.sh` | Toy subgraph → SigPN export + short MC (**no** GIN prior) |
 | `run_sigpn_demo.py` | Python entry used by `03_sigpn_demo.sh` |

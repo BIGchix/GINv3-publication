@@ -6,16 +6,17 @@
 
 ---
 
-## 1. 安装与解压先验
+## 1. 安装与先验
 
 ```bash
 pip install -e ".[sim]"
 export PYTHONHASHSEED=0
 python scripts/reproduce_publication.py --steps prepare
-# → ./GINv3.11a.sifi（约787MB），校验sha256 192b2cb5…
+# → 校验 data/GINv3.11a.sifi.gz（约75MB）；默认直接用压缩包
+# 可选：--materialize-sifi 解压明文，并以 --sifi ./GINv3.11a.sifi 显式指定
 ```
 
-也可将`--sifi`指向其它兼容的`GINv*.sifi`。
+默认`--sifi`为`data/GINv3.11a.sifi.gz`；也可显式传明文`.sifi`或其它兼容先验。
 
 ---
 
@@ -36,7 +37,7 @@ python -m gin_tool.cli -h
 
 ```bash
 python -m gin_tool.cli \
-  --sifi ./GINv3.11a.sifi \
+  --sifi data/GINv3.11a.sifi.gz \
   --seeds "TP53,MDM2,ATM,ATR" \
   --out-dir gin_out/demo_tp53 \
   --context-mech-depth 2 \

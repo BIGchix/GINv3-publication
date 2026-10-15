@@ -17,7 +17,14 @@ Determinism: `export PYTHONHASHSEED=0`. Publication freeze used `n_jobs=20`.
 python scripts/reproduce_publication.py --steps prepare
 ```
 
-Writes `GINv3.11a.sifi` (gitignored). Expected size `824892563`, sha256 `192b2cb5…`.
+Verifies bundled `data/GINv3.11a.sifi.gz` (sha256 `f9bb23c4…`). **Default prior is the compressed file** — no unpack required. Pass `--sifi ./GINv3.11a.sifi` only if you explicitly want the plain file.
+
+Optional materialize (does not change the default; use with explicit `--sifi`):
+
+```bash
+python scripts/reproduce_publication.py --steps prepare --materialize-sifi
+# → ./GINv3.11a.sifi · size 824892563 · uncompressed sha256 192b2cb5…
+```
 
 ## 1. Stage A (recompute)
 

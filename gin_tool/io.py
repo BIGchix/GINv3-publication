@@ -2,9 +2,12 @@
 
 from __future__ import annotations
 
-from collections.abc import Sequence
+import gzip
+from collections.abc import Iterator, Sequence
+from contextlib import contextmanager
 from dataclasses import dataclass
-from typing import Iterator
+from pathlib import Path
+from typing import TextIO
 
 import numpy as np
 from scipy import sparse
@@ -12,6 +15,27 @@ from scipy import sparse
 
 REL_POS = 1
 REL_NEG = -1
+
+
+def _is_gzip_path(path: str | Path) -> bool:
+    name = Path(path).name.lower()
+    return name.endswith(".gz")
+
+
+@contextmanager
+def open_sifi_text(
+    path: str | Path,
+    encoding: str = "utf-8",
+    errors: str = "strict",
+) -> Iterator[TextIO]:
+    """Open a ``.sifi`` or ``.sifi.gz`` edge list as text (transparent gzip)."""
+    p = Path(path)
+    if _is_gzip_path(p):
+        with gzip.open(p, "rt", encoding=encoding, errors=errors) as fh:
+            yield fh  # type: ignore[misc]
+    else:
+        with p.open("r", encoding=encoding, errors=errors) as fh:
+            yield fh
 
 
 def collect_unique_node_names(
@@ -23,10 +47,11 @@ def collect_unique_node_names(
     Single pass over the .sifi file to collect node names (no edge buffer).
 
     Use this for ``gin_node_is_member`` mapping QC before loading all edges.
+    Accepts plain ``.sifi`` or ``.sifi.gz``.
     """
     names: set[str] = set()
     n = 0
-    with open(path, "r", encoding=encoding) as f:
+    with open_sifi_text(path, encoding=encoding) as f:
         for line in f:
             if max_lines is not None and n >= max_lines:
                 break
@@ -48,9 +73,10 @@ def iter_sifi_edges(
     Stream (source, target, sign) from a GIN tab-separated edge list.
 
     Third column must be ``positive`` or ``negative`` (case-sensitive as in GIN).
+    Accepts plain ``.sifi`` or ``.sifi.gz``.
     """
     n = 0
-    with open(path, "r", encoding=encoding) as f:
+    with open_sifi_text(path, encoding=encoding) as f:
         for line in f:
             if max_lines is not None and n >= max_lines:
                 break
