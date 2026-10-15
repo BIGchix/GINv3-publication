@@ -8,7 +8,7 @@
 | Area | Contents |
 |------|----------|
 | Code | `gin_tool/` CLI & pipeline; `scbionet/spn/` SigPN engine |
-| Entry | `gin-multomics` / `python -m gin_tool.cli` |
+| Entry | `gin-multiomics` / `python -m gin_tool.cli` |
 | Docs | `USER_GUIDE.md` · `CLI_REFERENCE.md` · `CHIP_ALLOWLIST.md` · `SIGPN_CUSTOM_SIMULATIONS.md` |
 | Prior | `data/GINv3.11a.sifi.gz` (default `--sifi`; read directly) |
 | Layers / seeds | `nodeList/`, `seedLists/` |

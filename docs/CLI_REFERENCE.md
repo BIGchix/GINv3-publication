@@ -4,7 +4,7 @@
 
 ```bash
 python -m gin_tool.cli -h
-gin-multomics -h
+gin-multiomics -h
 ```
 
 下文只说明**推荐使用的选项**。CLI里其它历史开关请勿依赖；本包文档不展开。发表配方见`REPRODUCE.md`。

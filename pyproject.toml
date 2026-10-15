@@ -1,14 +1,44 @@
 [build-system]
-requires = ["setuptools>=61"]
+requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "gin-multomics"
+name = "gin-multiomics"
 version = "0.2.0"
 description = "Global Integrative Network (GIN) multi-omics toolkit: context extraction and SigPN (signaling Petri net; not stochastic PN), with GINv3.11a p53 recipes"
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
+authors = [
+    { name = "Chi Xu", email = "chix@big.ac.cn" },
+]
+maintainers = [
+    { name = "Chi Xu", email = "chix@big.ac.cn" },
+]
+keywords = [
+    "GIN",
+    "Global Integrative Network",
+    "multi-omics",
+    "systems biology",
+    "signaling",
+    "Petri net",
+    "SigPN",
+    "p53",
+    "context subgraph",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
 dependencies = [
     "numpy>=1.24",
     "scipy>=1.11",
@@ -24,20 +54,28 @@ sim = [
 ]
 dev = [
     "pytest>=7.0",
+    "build>=1.0",
     "pandas>=2.0",
     "matplotlib>=3.8",
     "seaborn>=0.13",
     "scikit-learn>=1.3",
 ]
 
+[project.urls]
+Homepage = "https://github.com/BIGchix/GINv3-publication"
+Repository = "https://github.com/BIGchix/GINv3-publication"
+Issues = "https://github.com/BIGchix/GINv3-publication/issues"
+Changelog = "https://github.com/BIGchix/GINv3-publication/blob/main/CHANGELOG.md"
+Documentation = "https://github.com/BIGchix/GINv3-publication/blob/main/docs/USER_GUIDE.md"
+
+[project.scripts]
+gin-multiomics = "gin_tool.cli:main"
+
 [tool.setuptools.packages.find]
 include = ["gin_tool*", "scbionet*"]
 
 [tool.setuptools.package-data]
 "gin_tool.subgraph_pipeline" = ["data/*.json"]
-
-[project.scripts]
-gin-multomics = "gin_tool.cli:main"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

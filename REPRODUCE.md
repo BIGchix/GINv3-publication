@@ -12,6 +12,10 @@ simulations (beyond the H1 B0 Pulse special case), see
 Determinism: `export PYTHONHASHSEED=0`. Publication freeze used `n_jobs=20`.
 
 The GIN prior used throughout is **`data/GINv3.11a.sifi.gz`** (read directly).
+It ships in the git tree; GitHub Releases do not re-upload it as an asset.
+Standalone URL (tag `v0.2.0`):
+https://github.com/BIGchix/GINv3-publication/raw/v0.2.0/data/GINv3.11a.sifi.gz
+— see [data/README.md](data/README.md).
 
 ## 0. Prepare the prior
 

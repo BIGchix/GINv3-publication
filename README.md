@@ -6,7 +6,7 @@
 Multi-omics **Global Integrative Network (GIN)** context extraction and **SigPN**
 (**signaling** Petri net — not stochastic PN) simulation for mechanism-oriented
 analyses. This repository is the manuscript **Code Availability** package:
-an installable toolkit (`gin-multomics`) plus a recipe that **recomputes** the
+an installable toolkit (`gin-multiomics`) plus a recipe that **recomputes** the
 p53 / GINv3.11a publication numbers.
 
 The GIN prior ships as **`data/GINv3.11a.sifi.gz`** (~75 MB). The toolkit and
@@ -61,10 +61,13 @@ After install, the CLI is available as:
 
 ```bash
 python -m gin_tool.cli -h
-# or: gin-multomics -h
+# or: gin-multiomics -h
 ```
 
-Default `--sifi` is `data/GINv3.11a.sifi.gz`. More detail:
+Default `--sifi` is `data/GINv3.11a.sifi.gz` (included in the clone).
+Standalone download (Release does not attach the ~75 MB asset):
+[raw v0.2.0](https://github.com/BIGchix/GINv3-publication/raw/v0.2.0/data/GINv3.11a.sifi.gz)
+· [data/README.md](data/README.md). More detail:
 [docs/USER_GUIDE.md](docs/USER_GUIDE.md).
 
 ---
