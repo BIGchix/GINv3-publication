@@ -8,14 +8,28 @@
 
 ## 1. 安装与先验
 
+**仅工具包（PyPI）：**
+
 ```bash
+pip install gin-multiomics
+# 或：pip install "gin-multiomics[sim]"
+gin-multiomics -h
+```
+
+PyPI包装的是代码；**不含**`data/GINv3.11a.sifi.gz`。需要先验时请clone本仓库，或从[data/README.md](../data/README.md)下载后传`--sifi`。
+
+**完整复现环境（推荐发表配方）：**
+
+```bash
+git clone https://github.com/BIGchix/GINv3-publication.git
+cd GINv3-publication
 pip install -e ".[sim]"
 export PYTHONHASHSEED=0
 python scripts/reproduce_publication.py --steps prepare
 # → 校验 data/GINv3.11a.sifi.gz（约75MB）
 ```
 
-**默认先验**为压缩包`data/GINv3.11a.sifi.gz`（CLI与`reproduce_publication.py`均自动选用）。无需解压。若需其它边表，再显式传`--sifi path/to/file.sifi[.gz]`。
+**默认先验**为压缩包`data/GINv3.11a.sifi.gz`（在clone树内时CLI与`reproduce_publication.py`自动选用）。无需解压。若需其它边表，再显式传`--sifi path/to/file.sifi[.gz]`。
 
 ---
 

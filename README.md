@@ -1,13 +1,14 @@
 # GINv3-publication
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/gin-multiomics.svg)](https://pypi.org/project/gin-multiomics/)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 
 Multi-omics **Global Integrative Network (GIN)** context extraction and **SigPN**
 (**signaling** Petri net — not stochastic PN) simulation for mechanism-oriented
 analyses. This repository is the manuscript **Code Availability** package:
-an installable toolkit (`gin-multiomics`) plus a recipe that **recomputes** the
-p53 / GINv3.11a publication numbers.
+an installable toolkit ([`gin-multiomics`](https://pypi.org/project/gin-multiomics/)
+on PyPI) plus a recipe that **recomputes** the p53 / GINv3.11a publication numbers.
 
 The GIN prior ships as **`data/GINv3.11a.sifi.gz`** (~75 MB). The toolkit and
 publication recipe read it **directly** — no unpack step is required.
@@ -47,6 +48,23 @@ points to it under Code Availability.
 
 ## Installation
 
+### Option A — PyPI (toolkit only)
+
+```bash
+pip install gin-multiomics
+# optional plotting / SigPN extras:
+pip install "gin-multiomics[sim]"
+gin-multiomics -h
+# or: python -m gin_tool.cli -h
+```
+
+PyPI ships the Python package (`gin_tool` / `scbionet`). It does **not** include
+the ~75 MB GIN prior. For analyses that need the prior, also clone this repo
+(or download the file below) and point `--sifi` at
+`data/GINv3.11a.sifi.gz` (or run from the clone so the default path resolves).
+
+### Option B — clone (toolkit + publication recipe + prior)
+
 ```bash
 git clone https://github.com/BIGchix/GINv3-publication.git
 cd GINv3-publication
@@ -57,15 +75,8 @@ python scripts/reproduce_publication.py --steps prepare
 # → verifies data/GINv3.11a.sifi.gz (sha256 f9bb23c4…)
 ```
 
-After install, the CLI is available as:
-
-```bash
-python -m gin_tool.cli -h
-# or: gin-multiomics -h
-```
-
 Default `--sifi` is `data/GINv3.11a.sifi.gz` (included in the clone).
-Standalone download (Release does not attach the ~75 MB asset):
+Standalone prior download (Release does not attach the asset):
 [raw v0.2.0](https://github.com/BIGchix/GINv3-publication/raw/v0.2.0/data/GINv3.11a.sifi.gz)
 · [data/README.md](data/README.md). More detail:
 [docs/USER_GUIDE.md](docs/USER_GUIDE.md).
