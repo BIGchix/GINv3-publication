@@ -12,11 +12,10 @@
 pip install -e ".[sim]"
 export PYTHONHASHSEED=0
 python scripts/reproduce_publication.py --steps prepare
-# → 校验 data/GINv3.11a.sifi.gz（约75MB）；默认直接用压缩包
-# 可选：--materialize-sifi 解压明文，并以 --sifi ./GINv3.11a.sifi 显式指定
+# → 校验 data/GINv3.11a.sifi.gz（约75MB）
 ```
 
-默认`--sifi`为`data/GINv3.11a.sifi.gz`；也可显式传明文`.sifi`或其它兼容先验。
+**默认先验**为压缩包`data/GINv3.11a.sifi.gz`（CLI与`reproduce_publication.py`均自动选用）。无需解压。若需其它边表，再显式传`--sifi path/to/file.sifi[.gz]`。
 
 ---
 
@@ -31,13 +30,12 @@ python -m gin_tool.cli -h
 **参数说明**：[CLI_REFERENCE.md](CLI_REFERENCE.md)（子图模式与pipeline版本用默认即可，不必改）。
 
 **必填**：`--seeds`（逗号分隔基因符号或完整GIN节点名）。  
-**常用**：`--sifi`、`--out-dir`、`--node-list-dir ./nodeList`。
+**常用**：`--out-dir`、`--node-list-dir ./nodeList`（`--sifi`有默认，一般可省略）。
 
 ### 2.1 Context子图
 
 ```bash
 python -m gin_tool.cli \
-  --sifi data/GINv3.11a.sifi.gz \
   --seeds "TP53,MDM2,ATM,ATR" \
   --out-dir gin_out/demo_tp53 \
   --context-mech-depth 2 \

@@ -170,7 +170,7 @@ Fig. 3E：**无** GRN prune、**无** chromHMM（规模普查）。
 
 **常需单独同步（体积大 / 常被 ignore）**
 
-- `GINv3.11a.sifi`（~825 MB）
+- `data/GINv3.11a.sifi.gz`（Code Availability默认先验；明文`GINv3.11a.sifi` ~825 MB仅历史冻结机）
 - `gin_out/p53_shared_context_v4_rh1_gin11a/`
 - `gin_out/p53_stageA_gin11a_h1_grn_prune/h1_wa01/`
 - `gin_out/p53_fig4_gin11a_noprune_cd/`（轨迹 JSON 很大）

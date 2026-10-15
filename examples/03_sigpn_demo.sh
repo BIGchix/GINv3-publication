@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Demo: toy subgraph → SigPN export + short Monte-Carlo (laptop-scale).
-# Does not require GINv3.11a.sifi (uses bundled examples/demo_sigpn/).
+# Does not require the GIN prior (uses bundled examples/demo_sigpn/).
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"

@@ -3,8 +3,9 @@
 This package redistributes **derived** network and omics artifacts for manuscript
 reproduction. Upstream licenses and attribution remain with the source databases:
 
-- **GIN** bipartite prior (`data/GINv3.11a.sifi.gz`) — original GIN / lab build
-  lineage; do not treat as a re-license of source pathway DBs.
+- **GIN** bipartite prior (`data/GINv3.11a.sifi.gz`, default toolkit prior) —
+  original GIN / lab build lineage; do not treat as a re-license of source
+  pathway DBs.
 - **ENCODE / Roadmap** chromHMM emissions and related weights under
   `runtime/chromhmm/` — follow ENCODE / Roadmap terms of use.
 - **ChIP-Atlas / related TF evidence** summarized as H1 allowlists under

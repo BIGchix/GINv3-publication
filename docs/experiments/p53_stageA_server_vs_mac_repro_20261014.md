@@ -7,6 +7,8 @@
 **Stage A边表指纹（发表）**：sha256 `350b7cb9acc8eaa7b1454f3c912f5aa1d94742a5f05b7492ed01b447039e6a43` · **11368**边 · **4626**节点 · neg **334**
 
 > **一句话结论**：同一套输入与CLI参数下，服务器Linux环境两次独立重算均bit对齐发表锁；本机macOS（arm64）与Docker Linux aarch64从零重算得到另一稳定指纹`5ac7f9d5…`（Jaccard≈0.9836）。发表数字与下游H1/pulse应使用**冻结边表**，而非本机重算边表。分叉点在HME chain repair的directed real-hop路径选择。
+>
+> **分发格式**：Code Availability包默认使用`data/GINv3.11a.sifi.gz`（内容与下表`GINv3.11a.sifi`一致）。本记录中的`--sifi GINv3.11a.sifi`指冻结时的明文路径；现可用`--sifi data/GINv3.11a.sifi.gz`或省略（CLI默认即压缩包）。
 
 ---
 

@@ -10,7 +10,7 @@
 | Code | `gin_tool/` CLI & pipeline; `scbionet/spn/` SigPN engine |
 | Entry | `gin-multomics` / `python -m gin_tool.cli` |
 | Docs | `USER_GUIDE.md` · `CLI_REFERENCE.md` · `CHIP_ALLOWLIST.md` · `SIGPN_CUSTOM_SIMULATIONS.md` |
-| Prior | `data/GINv3.11a.sifi.gz` (read directly; optional `--materialize-sifi`) |
+| Prior | `data/GINv3.11a.sifi.gz` (default `--sifi`; read directly) |
 | Layers / seeds | `nodeList/`, `seedLists/` |
 | Example H1 allowlist | `runtime/chip_gin_align/h1_wa01/` |
 | Optional runtime | omics place levels, chromHMM emissions |
@@ -35,7 +35,7 @@
 
 | Artifact | sha256 prefix |
 |----------|----------------|
-| Bundled `GINv3.11a.sifi.gz` | `f9bb23c4…` |
-| Unpacked `GINv3.11a.sifi` (optional) | `192b2cb5…` |
+| Bundled `data/GINv3.11a.sifi.gz` | `f9bb23c4…` |
+| Uncompressed content (sidecar / lock) | `192b2cb5…` |
 | Stage A edges | `350b7cb9…` (11,368) |
 | H1 edges | `562d79bc…` (11,363) |

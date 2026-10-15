@@ -7,7 +7,7 @@ into place as the primary workflow). For custom biology, use
 
 Steps (lock p53_pub_gin11a_hs0_20260929 + fig4cd 20261001):
 
-  prepare   verify data/GINv3.11a.sifi.gz SHA-256 (optional --materialize-sifi)
+  prepare   verify data/GINv3.11a.sifi.gz SHA-256
   stage_a   recompute context v4 · real-hop 1 · no GRN prune
   fig3e     recompute real-hop 1/2/3 series
   fig4cd    recompute six-line noprune SigPN (200×200)
@@ -351,11 +351,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument(
         "--materialize-sifi",
         action="store_true",
-        help=(
-            "During prepare: also unpack → ./GINv3.11a.sifi (~0.8 GB). "
-            "Pipeline default remains data/GINv3.11a.sifi.gz; pass "
-            "--sifi ./GINv3.11a.sifi on the CLI to use the plain file."
-        ),
+        help=argparse.SUPPRESS,  # advanced: unpack plain copy; default prior stays .gz
     )
     args = ap.parse_args(argv)
 

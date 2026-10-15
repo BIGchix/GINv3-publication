@@ -7,6 +7,8 @@
 **仿真策略**：仍用 **`spn_std_h1_b0`**（见 `docs/SPN_P53_STANDARD_PIPELINE.md`）。
 
 > **原则**：改 GIN / Stage A / H1 / Fig3E 边表前必须升版本 ID；**禁止**原地覆盖冻结路径。重跑须带相同 `PYTHONHASHSEED` 与 `n_jobs`。
+>
+> **Code Availability 分发**：本仓库默认先验为 `data/GINv3.11a.sifi.gz`（内容等价于下表明文 `GINv3.11a.sifi`，uncompressed sha `192b2cb5…`）。复现入口见根目录 `REPRODUCE.md` / `scripts/reproduce_publication.py`。
 
 ---
 
@@ -72,7 +74,7 @@ python3 scripts/assert_p53_pub_gin11a_lock.py
 
 | 文件 | sha256（前 16 hex） |
 |------|---------------------|
-| `GINv3.11a.sifi` | `192b2cb5a8147324…` |
+| `GINv3.11a.sifi`（或分发用 `data/GINv3.11a.sifi.gz`） | `192b2cb5…` / gz `f9bb23c4…` |
 | Stage A `subgraph_edges.tsv` | `37cfa1c926500ca9…` |
 | H1 `subgraph_edges.tsv` | `be8a73329ed76629…` |
 

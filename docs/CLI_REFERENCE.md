@@ -17,7 +17,7 @@ gin-multomics -h
 
 |选项|默认|说明|
 |---|---|---|
-|`--sifi`|`data/GINv3.11a.sifi.gz`|GIN边表路径（默认压缩包；也可显式传明文`.sifi`）|
+|`--sifi`|`data/GINv3.11a.sifi.gz`|GIN边表（默认压缩包；支持`.sifi`/`.sifi.gz`）|
 |`--seeds`|（必填）|逗号分隔基因符号或GIN节点名|
 |`--out-dir`|`gin_out`|输出目录|
 |`--node-list-dir`|仓库`nodeList/`|分层列表（自动k、debias、TF/HME池）|
@@ -89,7 +89,6 @@ export PYTHONHASHSEED=0
 SEEDS=$(bash scripts/build_p53_pi3k_comma_seeds.sh)
 
 python -m gin_tool.cli \
-  --sifi data/GINv3.11a.sifi.gz \
   --seeds "$SEEDS" \
   --out-dir gin_out/p53_shared_context_v4_rh1_gin11a \
   --context-mech-depth 2 \
@@ -97,6 +96,7 @@ python -m gin_tool.cli \
   --node-list-dir ./nodeList \
   --active-tfs-file seedLists/p53_pi3k_curated/active_tfs_rwrC_emp05.txt \
   --no-debias
+# 默认 --sifi=data/GINv3.11a.sifi.gz
 ```
 
 ---

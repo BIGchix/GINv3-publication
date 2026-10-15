@@ -11,6 +11,7 @@ from gin_tool.gin_defaults import (
     DEFAULT_SIFI,
     DEFAULT_SYMBOL_ALIASES,
     DEFAULT_SYMBOL_BLACKLIST,
+    REPO_ROOT,
 )
 from gin_tool.io import collect_unique_node_names
 from gin_tool.mapping import (
@@ -42,11 +43,15 @@ def main(argv: list[str] | None = None) -> int:
             "Runtime null debias only (no precompute)."
         ),
     )
+    try:
+        _sifi_help_default = str(DEFAULT_SIFI.relative_to(REPO_ROOT))
+    except ValueError:
+        _sifi_help_default = str(DEFAULT_SIFI)
     p.add_argument(
         "--sifi",
         type=Path,
         default=DEFAULT_SIFI,
-        help=f"Path to GINv*.sifi or .sifi.gz (default: {DEFAULT_SIFI.name})",
+        help=f"Path to GINv*.sifi or .sifi.gz (default: {_sifi_help_default})",
     )
     p.add_argument(
         "--seeds",

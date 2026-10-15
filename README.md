@@ -9,6 +9,9 @@ analyses. This repository is the manuscript **Code Availability** package:
 an installable toolkit (`gin-multomics`) plus a recipe that **recomputes** the
 p53 / GINv3.11a publication numbers.
 
+The GIN prior ships as **`data/GINv3.11a.sifi.gz`** (~75 MB). The toolkit and
+publication recipe read it **directly** — no unpack step is required.
+
 ---
 
 ## Citation
@@ -37,7 +40,7 @@ points to it under Code Availability.
 |------|--------|
 | OS | Linux recommended for bit-identical Stage A; macOS works for toolkit use |
 | Python | ≥ 3.9 |
-| Disk | Bundled prior `data/GINv3.11a.sifi.gz` (~75 MB); optional unpack +~0.8 GB |
+| Disk | Bundled `data/GINv3.11a.sifi.gz` (~75 MB) |
 | RAM / CPU | Context with `--context-n-jobs 20` is cluster-scale; small demos run on a laptop |
 
 ---
@@ -51,7 +54,7 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install -U pip && pip install -e ".[sim]"
 export PYTHONHASHSEED=0
 python scripts/reproduce_publication.py --steps prepare
-# → verifies data/GINv3.11a.sifi.gz (add --materialize-sifi to unpack ~0.8 GB plain)
+# → verifies data/GINv3.11a.sifi.gz (sha256 f9bb23c4…)
 ```
 
 After install, the CLI is available as:
@@ -61,17 +64,17 @@ python -m gin_tool.cli -h
 # or: gin-multomics -h
 ```
 
-More detail: [docs/USER_GUIDE.md](docs/USER_GUIDE.md).
+Default `--sifi` is `data/GINv3.11a.sifi.gz`. More detail:
+[docs/USER_GUIDE.md](docs/USER_GUIDE.md).
 
 ---
 
 ## Quick start
 
-**1. Context subgraph** (uses `data/GINv3.11a.sifi.gz` directly; no unpack required):
+**1. Context subgraph** (default prior = compressed GIN):
 
 ```bash
 python -m gin_tool.cli \
-  --sifi data/GINv3.11a.sifi.gz \
   --seeds "TP53,MDM2,CDKN1A" \
   --out-dir gin_out/my_context \
   --context-mech-depth 2 \
@@ -100,7 +103,7 @@ See [examples/](examples/) for more scripts.
 ## Workflow
 
 ```text
-seeds + GINv3.11a.sifi(.gz)
+seeds + data/GINv3.11a.sifi.gz
         │
         ▼
   context subgraph  ──►  (optional) ChIP prune  ──►  SigPN simulation
@@ -145,12 +148,13 @@ that contains `subgraph_edges.tsv` (and optionally `place_levels.tsv`).
 
 ## Reproduce manuscript results
 
-Recompute the publication pipeline:
+Recompute the publication pipeline (prior stays compressed throughout):
 
 ```bash
 export PYTHONHASHSEED=0
+python scripts/reproduce_publication.py --steps prepare
 python scripts/reproduce_publication.py --steps stage_a --n-jobs 20
-python scripts/assert_p53_pub_gin11a_lock.py --skip-sifi
+python scripts/assert_p53_pub_gin11a_lock.py
 
 # Full pipeline (cluster-scale: prune + Pulse, etc.)
 python scripts/reproduce_publication.py --steps all --n-jobs 20
@@ -183,7 +187,7 @@ and the step-by-step guide [REPRODUCE.md](REPRODUCE.md).
 |------|------|
 | `gin_tool/` | Context / HME / dogma / SigPN CLI |
 | `scbionet/spn/` | Vendored SigPN engine |
-| `data/GINv3.11a.sifi.gz` | Frozen GIN prior |
+| `data/GINv3.11a.sifi.gz` | Frozen GIN prior (default `--sifi`) |
 | `nodeList/` · `seedLists/` | Layer lists and seeds |
 | `runtime/chip_gin_align/` | Example H1 allowlist |
 | `runtime/omics_seed/` · `runtime/chromhmm/` | Example place levels / emissions |

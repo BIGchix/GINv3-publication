@@ -13,15 +13,22 @@ DEFAULT_SYMBOL_ALIASES = REPO_ROOT / "config" / "symbol_aliases.tsv"
 
 
 def _resolve_default_sifi() -> Path:
-    """Default to bundled ``.sifi.gz``; plain ``.sifi`` only if gz is absent."""
+    """Publication / toolkit default: bundled ``data/GINv3.11a.sifi.gz``.
+
+    Plain ``GINv3.11a.sifi`` is only used if the compressed prior is missing
+    (legacy local checkouts). Prefer passing ``--sifi`` explicitly for other
+    networks.
+    """
+    gz = REPO_ROOT / "data" / "GINv3.11a.sifi.gz"
+    if gz.is_file():
+        return gz
     for candidate in (
-        REPO_ROOT / "data" / "GINv3.11a.sifi.gz",
         REPO_ROOT / "GINv3.11a.sifi",
         REPO_ROOT / "data" / "GINv3.11a.sifi",
     ):
         if candidate.is_file():
             return candidate
-    return REPO_ROOT / "data" / "GINv3.11a.sifi.gz"
+    return gz
 
 
 DEFAULT_SIFI = _resolve_default_sifi()

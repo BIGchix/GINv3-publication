@@ -14,7 +14,7 @@
 整条链路（与锁`p53_pub_gin11a_hs0_20260929`一致）：
 
 ```text
-GINv3.11a.sifi(.gz)
+data/GINv3.11a.sifi.gz
     │  gin_tool.cli  context v4 · mech-depth 2 · no-debias
     ▼
 共享 Stage A 边表
